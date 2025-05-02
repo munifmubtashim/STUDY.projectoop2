@@ -51,6 +51,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -65,6 +71,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -88,6 +97,75 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Sunset.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dark Skies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Blue Lagoon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lawrencium.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Between The Clouds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Skies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Memariani.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Evening Night.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dania.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purplepine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purplepine1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eXpresso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Harvey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Moon Purple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delicate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zinc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grade Grey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-inventory-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What lies Beyond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Portrait.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Moss.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
