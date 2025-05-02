@@ -163,6 +163,16 @@ namespace projectoop2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Grade_Grey__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Grade Grey (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Harvey {
             get {
                 object obj = ResourceManager.GetObject("Harvey", resourceCulture);
@@ -176,6 +186,16 @@ namespace projectoop2.Properties {
         internal static System.Drawing.Bitmap icons8_inventory_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-inventory-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_male_user_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-male-user-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
