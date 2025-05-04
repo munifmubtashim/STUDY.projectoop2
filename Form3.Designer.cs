@@ -53,9 +53,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 26.03077F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(146, 158);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(536, 62);
+            this.label1.Size = new System.Drawing.Size(533, 62);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Welcome to InventoBill!";
+            this.label1.Text = "Welcome to StoreTrack!";
             // 
             // buttonlogin
             // 
