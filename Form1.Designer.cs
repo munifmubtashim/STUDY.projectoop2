@@ -56,7 +56,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel3.Controls.Add(this.pictureBox5);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.button1);
@@ -72,7 +72,7 @@
             this.panel3.Location = new System.Drawing.Point(291, 0);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(30, 25, 30, 25);
-            this.panel3.Size = new System.Drawing.Size(524, 483);
+            this.panel3.Size = new System.Drawing.Size(510, 501);
             this.panel3.TabIndex = 13;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -243,14 +243,15 @@
             this.label2.Size = new System.Drawing.Size(148, 38);
             this.label2.TabIndex = 24;
             this.label2.Text = "Smart inventory meets\r\n seamless billing\r\n";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.BackgroundImage = global::projectoop2.Properties.Resources.Dark_Skies;
-            this.ClientSize = new System.Drawing.Size(817, 478);
+            this.BackgroundImage = global::projectoop2.Properties.Resources.Harvey;
+            this.ClientSize = new System.Drawing.Size(796, 497);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
