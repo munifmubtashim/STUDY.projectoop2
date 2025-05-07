@@ -37,10 +37,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panelsidebar = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.Dashboardbutton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Dashboardbutton = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.pn1TotalProducts.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -137,25 +137,18 @@
             this.panelsidebar.Size = new System.Drawing.Size(127, 428);
             this.panelsidebar.TabIndex = 4;
             // 
-            // panel5
+            // button2
             // 
-            this.panel5.Location = new System.Drawing.Point(-1, -1);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(801, 34);
-            this.panel5.TabIndex = 5;
-            // 
-            // Dashboardbutton
-            // 
-            this.Dashboardbutton.BackColor = System.Drawing.Color.Transparent;
-            this.Dashboardbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Dashboardbutton.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dashboardbutton.ForeColor = System.Drawing.Color.White;
-            this.Dashboardbutton.Location = new System.Drawing.Point(0, 3);
-            this.Dashboardbutton.Name = "Dashboardbutton";
-            this.Dashboardbutton.Size = new System.Drawing.Size(127, 35);
-            this.Dashboardbutton.TabIndex = 0;
-            this.Dashboardbutton.Text = "Dashboard";
-            this.Dashboardbutton.UseVisualStyleBackColor = false;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(0, 85);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(127, 35);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Sales";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -170,18 +163,25 @@
             this.button1.Text = "Products";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // Dashboardbutton
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 85);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 35);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Sales";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Dashboardbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Dashboardbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Dashboardbutton.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dashboardbutton.ForeColor = System.Drawing.Color.White;
+            this.Dashboardbutton.Location = new System.Drawing.Point(0, 3);
+            this.Dashboardbutton.Name = "Dashboardbutton";
+            this.Dashboardbutton.Size = new System.Drawing.Size(127, 35);
+            this.Dashboardbutton.TabIndex = 0;
+            this.Dashboardbutton.Text = "Dashboard";
+            this.Dashboardbutton.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(-1, -1);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(801, 34);
+            this.panel5.TabIndex = 5;
             // 
             // Form2
             // 
@@ -196,6 +196,7 @@
             this.Controls.Add(this.pn1TotalProducts);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Click += new System.EventHandler(this.Form2_Click);
             this.pn1TotalProducts.ResumeLayout(false);
             this.pn1TotalProducts.PerformLayout();
             this.panel1.ResumeLayout(false);

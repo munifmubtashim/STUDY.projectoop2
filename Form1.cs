@@ -44,7 +44,7 @@ namespace projectoop2
 
         private void label3_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -58,6 +58,16 @@ namespace projectoop2
         }
 
         private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonlogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Click(object sender, EventArgs e)
         {
 
         }

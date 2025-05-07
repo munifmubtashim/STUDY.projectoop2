@@ -150,6 +150,7 @@
             this.buttonlogin.TabIndex = 21;
             this.buttonlogin.Text = "Log in";
             this.buttonlogin.UseVisualStyleBackColor = false;
+            this.buttonlogin.Click += new System.EventHandler(this.buttonlogin_Click);
             // 
             // textBoxpassword
             // 
@@ -250,7 +251,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.BackgroundImage = global::projectoop2.Properties.Resources.Harvey;
+            this.BackgroundImage = global::projectoop2.Properties.Resources.Blu;
             this.ClientSize = new System.Drawing.Size(796, 497);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -264,6 +265,7 @@
             this.Name = "Form1";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
+            this.Click += new System.EventHandler(this.Form1_Click);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
