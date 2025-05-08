@@ -183,6 +183,16 @@ namespace projectoop2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_eye {
+            get {
+                object obj = ResourceManager.GetObject("icons8-eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_eye_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-eye-24", resourceCulture);
@@ -206,6 +216,16 @@ namespace projectoop2.Properties {
         internal static System.Drawing.Bitmap icons8_inventory_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-inventory-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_inventory_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-inventory-50 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,9 +293,39 @@ namespace projectoop2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Midnight_City {
+            get {
+                object obj = ResourceManager.GetObject("Midnight City", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mirage {
+            get {
+                object obj = ResourceManager.GetObject("Mirage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Moon_Purple {
             get {
                 object obj = ResourceManager.GetObject("Moon Purple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Moonlit_Asteroid {
+            get {
+                object obj = ResourceManager.GetObject("Moonlit Asteroid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,6 +363,16 @@ namespace projectoop2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Portrait1 {
+            get {
+                object obj = ResourceManager.GetObject("Portrait1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Purplepine {
             get {
                 object obj = ResourceManager.GetObject("Purplepine", resourceCulture);
@@ -336,6 +396,16 @@ namespace projectoop2.Properties {
         internal static System.Drawing.Bitmap Red_Sunset {
             get {
                 object obj = ResourceManager.GetObject("Red Sunset", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Royal {
+            get {
+                object obj = ResourceManager.GetObject("Royal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -386,6 +456,16 @@ namespace projectoop2.Properties {
         internal static System.Drawing.Bitmap Zinc {
             get {
                 object obj = ResourceManager.GetObject("Zinc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zinc1 {
+            get {
+                object obj = ResourceManager.GetObject("Zinc1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

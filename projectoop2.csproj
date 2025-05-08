@@ -197,5 +197,29 @@
   <ItemGroup>
     <None Include="Resources\icons8-eye-24.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-inventory-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zinc1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Portrait1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Midnight City.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mirage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Moonlit Asteroid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Royal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

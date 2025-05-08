@@ -21,5 +21,17 @@ namespace projectoop2
         {
 
         }
+
+        private void buttonlogin_Click(object sender, EventArgs e)
+        {
+            Form1 Form1 = new Form1();
+            Form1.Show();
+            this.Hide();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

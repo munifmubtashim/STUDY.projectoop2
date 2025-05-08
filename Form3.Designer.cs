@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonlogin = new System.Windows.Forms.Button();
@@ -61,7 +62,7 @@
             // 
             this.buttonlogin.BackColor = System.Drawing.Color.Transparent;
             this.buttonlogin.BackgroundImage = global::projectoop2.Properties.Resources.Blu;
-            this.buttonlogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonlogin.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonlogin.Font = new System.Drawing.Font("Segoe UI Semibold", 7.753846F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonlogin.ForeColor = System.Drawing.Color.Black;
             this.buttonlogin.Location = new System.Drawing.Point(330, 281);
@@ -70,6 +71,7 @@
             this.buttonlogin.TabIndex = 22;
             this.buttonlogin.Text = "Sign In";
             this.buttonlogin.UseVisualStyleBackColor = false;
+            this.buttonlogin.Click += new System.EventHandler(this.buttonlogin_Click);
             // 
             // Form3
             // 
@@ -80,9 +82,12 @@
             this.Controls.Add(this.buttonlogin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form3";
-            this.Text = "InventoBill";
+            this.Text = "StoreTrack";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.Click += new System.EventHandler(this.Form3_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
