@@ -145,7 +145,7 @@ namespace projectoop2
 
         private void pictureeye_MouseUp(object sender, MouseEventArgs e)
         {
-            textpassword.UseSystemPasswordChar = false;
+            textpassword.UseSystemPasswordChar = true;
         }
 
         private void pictureeye_MouseDown(object sender, MouseEventArgs e)
