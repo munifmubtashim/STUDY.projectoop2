@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace projectoop2
 {
@@ -23,6 +24,10 @@ namespace projectoop2
         private void Form2_Load(object sender, EventArgs e)
         {  string currentDateTime = DateTime.Now.ToString("dd/MM/yyyy");
             label1.Text = $"{_username} ({_role}) | {currentDateTime}";
+           
+          
+
+            
         }
         private void pn1TotalProducts_Paint(object sender, PaintEventArgs e)
         {
@@ -60,6 +65,46 @@ namespace projectoop2
         }
 
         private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
         {
 
         }
