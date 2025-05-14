@@ -253,6 +253,26 @@ namespace projectoop2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kadarius_seegars_DevJkLB3hWE_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("kadarius-seegars-DevJkLB3hWE-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap klara_vernarcova_60zqbdiLHg0_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("klara-vernarcova-60zqbdiLHg0-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Lawrencium {
             get {
                 object obj = ResourceManager.GetObject("Lawrencium", resourceCulture);

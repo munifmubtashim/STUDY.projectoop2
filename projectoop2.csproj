@@ -222,5 +222,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-eye.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kadarius-seegars-DevJkLB3hWE-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klara-vernarcova-60zqbdiLHg0-unsplash.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
