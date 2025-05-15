@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbllogin = new System.Windows.Forms.Label();
             this.cboxacctype = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -42,18 +43,17 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtconpass = new System.Windows.Forms.TextBox();
-            this.piceye = new System.Windows.Forms.PictureBox();
             this.txtpass = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnsignup = new System.Windows.Forms.Button();
             this.txtusername = new System.Windows.Forms.TextBox();
             this.txtemail = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.piceye = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.piceye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,6 +67,7 @@
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.SystemColors.HighlightText;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lbllogin);
             this.panel1.Controls.Add(this.cboxacctype);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
@@ -81,7 +82,6 @@
             this.panel1.Controls.Add(this.txtconpass);
             this.panel1.Controls.Add(this.piceye);
             this.panel1.Controls.Add(this.txtpass);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnsignup);
             this.panel1.Controls.Add(this.txtusername);
@@ -92,9 +92,23 @@
             this.panel1.Location = new System.Drawing.Point(432, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(30, 25, 30, 25);
-            this.panel1.Size = new System.Drawing.Size(368, 551);
+            this.panel1.Size = new System.Drawing.Size(368, 557);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lbllogin
+            // 
+            this.lbllogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbllogin.AutoSize = true;
+            this.lbllogin.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbllogin.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lbllogin.Location = new System.Drawing.Point(231, 511);
+            this.lbllogin.Name = "lbllogin";
+            this.lbllogin.Size = new System.Drawing.Size(48, 19);
+            this.lbllogin.TabIndex = 26;
+            this.lbllogin.Text = "Log In";
+            this.lbllogin.Click += new System.EventHandler(this.lbllogin_Click);
             // 
             // cboxacctype
             // 
@@ -251,20 +265,6 @@
             this.txtconpass.TabIndex = 30;
             this.txtconpass.UseSystemPasswordChar = true;
             // 
-            // piceye
-            // 
-            this.piceye.BackColor = System.Drawing.Color.Transparent;
-            this.piceye.Image = global::projectoop2.Properties.Resources.icons8_eye_24;
-            this.piceye.Location = new System.Drawing.Point(310, 214);
-            this.piceye.Name = "piceye";
-            this.piceye.Size = new System.Drawing.Size(23, 17);
-            this.piceye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.piceye.TabIndex = 29;
-            this.piceye.TabStop = false;
-            this.piceye.Click += new System.EventHandler(this.piceye_Click);
-            this.piceye.MouseDown += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseDown);
-            this.piceye.MouseUp += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseUp);
-            // 
             // txtpass
             // 
             this.txtpass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -279,31 +279,17 @@
             this.txtpass.TabIndex = 28;
             this.txtpass.UseSystemPasswordChar = true;
             // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 4.984615F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(207, 510);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 12);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Log In";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 4.984615F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 6.092308F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(106, 510);
+            this.label2.Location = new System.Drawing.Point(96, 515);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 12);
+            this.label2.Size = new System.Drawing.Size(137, 13);
             this.label2.TabIndex = 25;
             this.label2.Text = "Already have an account?";
             // 
@@ -350,18 +336,6 @@
             this.txtemail.Text = " ";
             this.txtemail.TextChanged += new System.EventHandler(this.txtemail_TextChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::projectoop2.Properties.Resources.icons8_male_user_48;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(153, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12.18462F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -386,6 +360,32 @@
             this.label4.TabIndex = 24;
             this.label4.Text = "StoreTrack";
             // 
+            // piceye
+            // 
+            this.piceye.BackColor = System.Drawing.Color.Transparent;
+            this.piceye.Image = global::projectoop2.Properties.Resources.icons8_eye_24;
+            this.piceye.Location = new System.Drawing.Point(310, 214);
+            this.piceye.Name = "piceye";
+            this.piceye.Size = new System.Drawing.Size(23, 17);
+            this.piceye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.piceye.TabIndex = 29;
+            this.piceye.TabStop = false;
+            this.piceye.Click += new System.EventHandler(this.piceye_Click);
+            this.piceye.MouseDown += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseDown);
+            this.piceye.MouseUp += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseUp);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::projectoop2.Properties.Resources.icons8_male_user_48;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(153, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -403,7 +403,8 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BackgroundImage = global::projectoop2.Properties.Resources.IMG_2005;
+            this.BackgroundImage = global::projectoop2.Properties.Resources.lol;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(782, 551);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox4);
@@ -432,7 +433,7 @@
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Button btnsignup;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbllogin;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox txtconpass;

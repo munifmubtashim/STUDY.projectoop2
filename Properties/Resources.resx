@@ -124,6 +124,9 @@
   <data name="Ash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lol.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="username" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\username.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,23 +142,23 @@
   <data name="Dark Skies" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dark Skies.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="login (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Moon Purple" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Moon Purple.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="login (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Flux_Dev_Darkthemed_digital_illustration_of_an_inventory_manag_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Flux_Dev_Darkthemed_digital_illustration_of_an_inventory_manag_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Midnight City" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Midnight City.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Moonlit Asteroid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Moonlit Asteroid.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Purplepine1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Purplepine1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Blu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="klara-vernarcova-60zqbdiLHg0-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\klara-vernarcova-60zqbdiLHg0-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,14 +166,23 @@
   <data name="Portrait1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Portrait1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Red Sunset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red Sunset.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Harvey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Harvey.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Zinc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Zinc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purplepine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Purplepine.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vecteezy_user-icon-in-trendy-flat-style-isolated-on-grey-background_5005837" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vecteezy_user-icon-in-trendy-flat-style-isolated-on-grey-background_5005837.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Blu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mirage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mirage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,9 +202,6 @@
   <data name="Lawrencium" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lawrencium.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Portrait" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Portrait.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Evening Night" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Evening Night.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,26 +220,26 @@
   <data name="Royal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Royal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eXpresso" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eXpresso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Dania" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dania.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-inventory-50 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-inventory-50 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Purplepine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Purplepine.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eXpresso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eXpresso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-male-user-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-male-user-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Red Sunset" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Red Sunset.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Portrait" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Portrait.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Memariani" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Memariani.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_2005" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_2005.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-eye-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-eye-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,8 +247,8 @@
   <data name="Blue Skies" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blue Skies.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Harvey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Harvey.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Moonlit Asteroid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Moonlit Asteroid.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Zinc1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Zinc1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,7 +256,7 @@
   <data name="Moss" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Moss.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_2005" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IMG_2005.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Nighthawk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nighthawk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

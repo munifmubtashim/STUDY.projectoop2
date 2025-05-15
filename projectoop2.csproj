@@ -285,5 +285,14 @@
   <ItemGroup>
     <None Include="Resources\IMG_2005.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flux_Dev_Darkthemed_digital_illustration_of_an_inventory_manag_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nighthawk.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

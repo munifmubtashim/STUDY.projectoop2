@@ -63,9 +63,7 @@ namespace projectoop2
 
         private void btnsuppliers_Click(object sender, EventArgs e)
         {
-            Form8 suppliers = new Form8(_username, _role);
-            suppliers.Show();
-            this.Hide();
+           
         }
 
         private void btnpurcheses_Click(object sender, EventArgs e)

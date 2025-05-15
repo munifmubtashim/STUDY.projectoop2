@@ -153,6 +153,16 @@ namespace projectoop2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Flux_Dev_Darkthemed_digital_illustration_of_an_inventory_manag_1 {
+            get {
+                object obj = ResourceManager.GetObject("Flux_Dev_Darkthemed_digital_illustration_of_an_inventory_manag_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Grade_Grey {
             get {
                 object obj = ResourceManager.GetObject("Grade Grey", resourceCulture);
@@ -313,6 +323,16 @@ namespace projectoop2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lol {
+            get {
+                object obj = ResourceManager.GetObject("lol", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Memariani {
             get {
                 object obj = ResourceManager.GetObject("Memariani", resourceCulture);
@@ -366,6 +386,16 @@ namespace projectoop2.Properties {
         internal static System.Drawing.Bitmap Moss {
             get {
                 object obj = ResourceManager.GetObject("Moss", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Nighthawk {
+            get {
+                object obj = ResourceManager.GetObject("Nighthawk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

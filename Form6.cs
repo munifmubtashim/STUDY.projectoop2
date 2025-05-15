@@ -50,24 +50,21 @@ namespace projectoop2
 
         private void btnsales_Click(object sender, EventArgs e)
         {
-            Form6 sales = new Form6(_username, _role);
-            sales.Show();
-            this.Hide();
+
         }
+
         private void btncustomers_Click(object sender, EventArgs e)
         {
             Form7 customers = new Form7(_username, _role);
             customers.Show();
             this.Hide();
-
         }
+
         private void btnsuppliers_Click(object sender, EventArgs e)
         {
             Form8 suppliers = new Form8(_username, _role);
             suppliers.Show();
             this.Hide();
-
-
         }
 
         private void btnpurcheses_Click(object sender, EventArgs e)
@@ -75,7 +72,6 @@ namespace projectoop2
             Form9 purchese = new Form9(_username, _role);
             purchese.Show();
             this.Hide();
-
         }
 
         private void btnsettings_Click(object sender, EventArgs e)
@@ -83,16 +79,15 @@ namespace projectoop2
             Form10 settings = new Form10(_username, _role);
             settings.Show();
             this.Hide();
-
         }
 
         private void btnlogout_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Do you want to logout and go to the login page?",
-            "Logout Confirmation",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Question
-             );
+        "Logout Confirmation",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question
+         );
 
             if (result == DialogResult.Yes)
             {

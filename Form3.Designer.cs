@@ -77,7 +77,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::projectoop2.Properties.Resources.Blu;
+            this.BackgroundImage = global::projectoop2.Properties.Resources.Dark_Skies;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnsignin);
             this.Controls.Add(this.label1);

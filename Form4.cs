@@ -52,7 +52,7 @@ namespace projectoop2
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void lbllogin_Click(object sender, EventArgs e)
         {
             Form1 Form1 = new Form1();
             Form1.Show();

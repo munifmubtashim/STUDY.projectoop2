@@ -49,9 +49,7 @@ namespace projectoop2
 
         private void btnproduct_Click(object sender, EventArgs e)
         {
-            Form5 products = new Form5(_username, _role);
-            products.Show();
-            this.Hide();
+          
         }
 
 
@@ -110,6 +108,11 @@ namespace projectoop2
 
                 Application.Exit();
             }
+        }
+
+        private void Form5_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
