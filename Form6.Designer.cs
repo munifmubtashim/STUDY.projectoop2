@@ -153,6 +153,7 @@
             this.btnproduct.TabIndex = 1;
             this.btnproduct.Text = "Products";
             this.btnproduct.UseVisualStyleBackColor = false;
+            this.btnproduct.Click += new System.EventHandler(this.btnproduct_Click);
             // 
             // Dashboardbutton
             // 
@@ -166,6 +167,7 @@
             this.Dashboardbutton.TabIndex = 0;
             this.Dashboardbutton.Text = "Dashboard";
             this.Dashboardbutton.UseVisualStyleBackColor = false;
+            this.Dashboardbutton.Click += new System.EventHandler(this.Dashboardbutton_Click);
             // 
             // panel5
             // 
@@ -221,6 +223,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form6";
             this.Text = "Sales";
+            this.Load += new System.EventHandler(this.Form6_Load);
             this.panelsidebar.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();

@@ -75,6 +75,7 @@
             this.btnlogout.TabIndex = 13;
             this.btnlogout.Text = "Logout";
             this.btnlogout.UseVisualStyleBackColor = false;
+            this.btnlogout.Click += new System.EventHandler(this.btnlogout_Click_1);
             // 
             // btnsettings
             // 
@@ -88,6 +89,7 @@
             this.btnsettings.TabIndex = 12;
             this.btnsettings.Text = "Settings";
             this.btnsettings.UseVisualStyleBackColor = false;
+            this.btnsettings.Click += new System.EventHandler(this.btnsettings_Click_1);
             // 
             // btnpurcheses
             // 
@@ -101,6 +103,7 @@
             this.btnpurcheses.TabIndex = 11;
             this.btnpurcheses.Text = "Purchases";
             this.btnpurcheses.UseVisualStyleBackColor = false;
+            this.btnpurcheses.Click += new System.EventHandler(this.btnpurcheses_Click_1);
             // 
             // btnsuppliers
             // 
@@ -114,6 +117,7 @@
             this.btnsuppliers.TabIndex = 10;
             this.btnsuppliers.Text = "Suppliers";
             this.btnsuppliers.UseVisualStyleBackColor = false;
+            this.btnsuppliers.Click += new System.EventHandler(this.btnsuppliers_Click_1);
             // 
             // btncustomers
             // 
@@ -127,6 +131,7 @@
             this.btncustomers.TabIndex = 7;
             this.btncustomers.Text = "Customers";
             this.btncustomers.UseVisualStyleBackColor = false;
+            this.btncustomers.Click += new System.EventHandler(this.btncustomers_Click_1);
             // 
             // btnsales
             // 
@@ -140,6 +145,7 @@
             this.btnsales.TabIndex = 6;
             this.btnsales.Text = "Sales";
             this.btnsales.UseVisualStyleBackColor = false;
+            this.btnsales.Click += new System.EventHandler(this.btnsales_Click_1);
             // 
             // btnproduct
             // 
@@ -153,6 +159,7 @@
             this.btnproduct.TabIndex = 1;
             this.btnproduct.Text = "Products";
             this.btnproduct.UseVisualStyleBackColor = false;
+            this.btnproduct.Click += new System.EventHandler(this.btnproduct_Click_1);
             // 
             // Dashboardbutton
             // 
@@ -166,6 +173,7 @@
             this.Dashboardbutton.TabIndex = 0;
             this.Dashboardbutton.Text = "Dashboard";
             this.Dashboardbutton.UseVisualStyleBackColor = false;
+            this.Dashboardbutton.Click += new System.EventHandler(this.Dashboardbutton_Click_1);
             // 
             // panel5
             // 
@@ -221,6 +229,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form9";
             this.Text = "Purcheses";
+            this.Load += new System.EventHandler(this.Form9_Load);
             this.panelsidebar.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();

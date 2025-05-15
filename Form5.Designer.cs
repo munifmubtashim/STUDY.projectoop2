@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbluser = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panelsidebar = new System.Windows.Forms.Panel();
             this.btnlogout = new System.Windows.Forms.Button();
             this.btnsettings = new System.Windows.Forms.Button();
@@ -42,9 +38,142 @@
             this.btnsales = new System.Windows.Forms.Button();
             this.btnproduct = new System.Windows.Forms.Button();
             this.Dashboardbutton = new System.Windows.Forms.Button();
-            this.panel5.SuspendLayout();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbluser = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panelsidebar.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panelsidebar
+            // 
+            this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panelsidebar.BackgroundImage = global::projectoop2.Properties.Resources.Royal;
+            this.panelsidebar.Controls.Add(this.btnlogout);
+            this.panelsidebar.Controls.Add(this.btnsettings);
+            this.panelsidebar.Controls.Add(this.btnpurcheses);
+            this.panelsidebar.Controls.Add(this.btnsuppliers);
+            this.panelsidebar.Controls.Add(this.btncustomers);
+            this.panelsidebar.Controls.Add(this.btnsales);
+            this.panelsidebar.Controls.Add(this.btnproduct);
+            this.panelsidebar.Controls.Add(this.Dashboardbutton);
+            this.panelsidebar.Location = new System.Drawing.Point(-1, 27);
+            this.panelsidebar.Name = "panelsidebar";
+            this.panelsidebar.Size = new System.Drawing.Size(127, 428);
+            this.panelsidebar.TabIndex = 19;
+            // 
+            // btnlogout
+            // 
+            this.btnlogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnlogout.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogout.ForeColor = System.Drawing.Color.White;
+            this.btnlogout.Location = new System.Drawing.Point(-3, 290);
+            this.btnlogout.Name = "btnlogout";
+            this.btnlogout.Size = new System.Drawing.Size(127, 35);
+            this.btnlogout.TabIndex = 13;
+            this.btnlogout.Text = "Logout";
+            this.btnlogout.UseVisualStyleBackColor = false;
+            this.btnlogout.Click += new System.EventHandler(this.btnlogout_Click);
+            // 
+            // btnsettings
+            // 
+            this.btnsettings.BackColor = System.Drawing.Color.Transparent;
+            this.btnsettings.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnsettings.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsettings.ForeColor = System.Drawing.Color.White;
+            this.btnsettings.Location = new System.Drawing.Point(3, 249);
+            this.btnsettings.Name = "btnsettings";
+            this.btnsettings.Size = new System.Drawing.Size(127, 35);
+            this.btnsettings.TabIndex = 12;
+            this.btnsettings.Text = "Settings";
+            this.btnsettings.UseVisualStyleBackColor = false;
+            this.btnsettings.Click += new System.EventHandler(this.btnsettings_Click);
+            // 
+            // btnpurcheses
+            // 
+            this.btnpurcheses.BackColor = System.Drawing.Color.Transparent;
+            this.btnpurcheses.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnpurcheses.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpurcheses.ForeColor = System.Drawing.Color.White;
+            this.btnpurcheses.Location = new System.Drawing.Point(0, 208);
+            this.btnpurcheses.Name = "btnpurcheses";
+            this.btnpurcheses.Size = new System.Drawing.Size(127, 35);
+            this.btnpurcheses.TabIndex = 11;
+            this.btnpurcheses.Text = "Purchases";
+            this.btnpurcheses.UseVisualStyleBackColor = false;
+            this.btnpurcheses.Click += new System.EventHandler(this.btnpurcheses_Click);
+            // 
+            // btnsuppliers
+            // 
+            this.btnsuppliers.BackColor = System.Drawing.Color.Transparent;
+            this.btnsuppliers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnsuppliers.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsuppliers.ForeColor = System.Drawing.Color.White;
+            this.btnsuppliers.Location = new System.Drawing.Point(3, 167);
+            this.btnsuppliers.Name = "btnsuppliers";
+            this.btnsuppliers.Size = new System.Drawing.Size(127, 35);
+            this.btnsuppliers.TabIndex = 10;
+            this.btnsuppliers.Text = "Suppliers";
+            this.btnsuppliers.UseVisualStyleBackColor = false;
+            this.btnsuppliers.Click += new System.EventHandler(this.btnsuppliers_Click);
+            // 
+            // btncustomers
+            // 
+            this.btncustomers.BackColor = System.Drawing.Color.Transparent;
+            this.btncustomers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btncustomers.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncustomers.ForeColor = System.Drawing.Color.White;
+            this.btncustomers.Location = new System.Drawing.Point(3, 126);
+            this.btncustomers.Name = "btncustomers";
+            this.btncustomers.Size = new System.Drawing.Size(127, 35);
+            this.btncustomers.TabIndex = 7;
+            this.btncustomers.Text = "Customers";
+            this.btncustomers.UseVisualStyleBackColor = false;
+            this.btncustomers.Click += new System.EventHandler(this.btncustomers_Click);
+            // 
+            // btnsales
+            // 
+            this.btnsales.BackColor = System.Drawing.Color.Transparent;
+            this.btnsales.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnsales.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsales.ForeColor = System.Drawing.Color.White;
+            this.btnsales.Location = new System.Drawing.Point(0, 85);
+            this.btnsales.Name = "btnsales";
+            this.btnsales.Size = new System.Drawing.Size(127, 35);
+            this.btnsales.TabIndex = 6;
+            this.btnsales.Text = "Sales";
+            this.btnsales.UseVisualStyleBackColor = false;
+            this.btnsales.Click += new System.EventHandler(this.btnsales_Click_1);
+            // 
+            // btnproduct
+            // 
+            this.btnproduct.BackColor = System.Drawing.Color.Transparent;
+            this.btnproduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnproduct.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnproduct.ForeColor = System.Drawing.Color.White;
+            this.btnproduct.Location = new System.Drawing.Point(0, 44);
+            this.btnproduct.Name = "btnproduct";
+            this.btnproduct.Size = new System.Drawing.Size(127, 35);
+            this.btnproduct.TabIndex = 1;
+            this.btnproduct.Text = "Products";
+            this.btnproduct.UseVisualStyleBackColor = false;
+            this.btnproduct.Click += new System.EventHandler(this.btnproduct_Click);
+            // 
+            // Dashboardbutton
+            // 
+            this.Dashboardbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Dashboardbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Dashboardbutton.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dashboardbutton.ForeColor = System.Drawing.Color.White;
+            this.Dashboardbutton.Location = new System.Drawing.Point(0, 3);
+            this.Dashboardbutton.Name = "Dashboardbutton";
+            this.Dashboardbutton.Size = new System.Drawing.Size(127, 35);
+            this.Dashboardbutton.TabIndex = 0;
+            this.Dashboardbutton.Text = "Dashboard";
+            this.Dashboardbutton.UseVisualStyleBackColor = false;
+            this.Dashboardbutton.Click += new System.EventHandler(this.Dashboardbutton_Click_1);
             // 
             // panel5
             // 
@@ -90,127 +219,6 @@
             this.label4.TabIndex = 26;
             this.label4.Text = "StoreTrack Inventory System";
             // 
-            // panelsidebar
-            // 
-            this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.panelsidebar.BackgroundImage = global::projectoop2.Properties.Resources.Royal;
-            this.panelsidebar.Controls.Add(this.btnlogout);
-            this.panelsidebar.Controls.Add(this.btnsettings);
-            this.panelsidebar.Controls.Add(this.btnpurcheses);
-            this.panelsidebar.Controls.Add(this.btnsuppliers);
-            this.panelsidebar.Controls.Add(this.btncustomers);
-            this.panelsidebar.Controls.Add(this.btnsales);
-            this.panelsidebar.Controls.Add(this.btnproduct);
-            this.panelsidebar.Controls.Add(this.Dashboardbutton);
-            this.panelsidebar.Location = new System.Drawing.Point(-1, 27);
-            this.panelsidebar.Name = "panelsidebar";
-            this.panelsidebar.Size = new System.Drawing.Size(127, 428);
-            this.panelsidebar.TabIndex = 19;
-            // 
-            // btnlogout
-            // 
-            this.btnlogout.BackColor = System.Drawing.Color.Transparent;
-            this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnlogout.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogout.ForeColor = System.Drawing.Color.White;
-            this.btnlogout.Location = new System.Drawing.Point(-3, 290);
-            this.btnlogout.Name = "btnlogout";
-            this.btnlogout.Size = new System.Drawing.Size(127, 35);
-            this.btnlogout.TabIndex = 13;
-            this.btnlogout.Text = "Logout";
-            this.btnlogout.UseVisualStyleBackColor = false;
-            // 
-            // btnsettings
-            // 
-            this.btnsettings.BackColor = System.Drawing.Color.Transparent;
-            this.btnsettings.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnsettings.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsettings.ForeColor = System.Drawing.Color.White;
-            this.btnsettings.Location = new System.Drawing.Point(3, 249);
-            this.btnsettings.Name = "btnsettings";
-            this.btnsettings.Size = new System.Drawing.Size(127, 35);
-            this.btnsettings.TabIndex = 12;
-            this.btnsettings.Text = "Settings";
-            this.btnsettings.UseVisualStyleBackColor = false;
-            // 
-            // btnpurcheses
-            // 
-            this.btnpurcheses.BackColor = System.Drawing.Color.Transparent;
-            this.btnpurcheses.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnpurcheses.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpurcheses.ForeColor = System.Drawing.Color.White;
-            this.btnpurcheses.Location = new System.Drawing.Point(0, 208);
-            this.btnpurcheses.Name = "btnpurcheses";
-            this.btnpurcheses.Size = new System.Drawing.Size(127, 35);
-            this.btnpurcheses.TabIndex = 11;
-            this.btnpurcheses.Text = "Purchases";
-            this.btnpurcheses.UseVisualStyleBackColor = false;
-            // 
-            // btnsuppliers
-            // 
-            this.btnsuppliers.BackColor = System.Drawing.Color.Transparent;
-            this.btnsuppliers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnsuppliers.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsuppliers.ForeColor = System.Drawing.Color.White;
-            this.btnsuppliers.Location = new System.Drawing.Point(3, 167);
-            this.btnsuppliers.Name = "btnsuppliers";
-            this.btnsuppliers.Size = new System.Drawing.Size(127, 35);
-            this.btnsuppliers.TabIndex = 10;
-            this.btnsuppliers.Text = "Suppliers";
-            this.btnsuppliers.UseVisualStyleBackColor = false;
-            // 
-            // btncustomers
-            // 
-            this.btncustomers.BackColor = System.Drawing.Color.Transparent;
-            this.btncustomers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btncustomers.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncustomers.ForeColor = System.Drawing.Color.White;
-            this.btncustomers.Location = new System.Drawing.Point(3, 126);
-            this.btncustomers.Name = "btncustomers";
-            this.btncustomers.Size = new System.Drawing.Size(127, 35);
-            this.btncustomers.TabIndex = 7;
-            this.btncustomers.Text = "Customers";
-            this.btncustomers.UseVisualStyleBackColor = false;
-            // 
-            // btnsales
-            // 
-            this.btnsales.BackColor = System.Drawing.Color.Transparent;
-            this.btnsales.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnsales.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsales.ForeColor = System.Drawing.Color.White;
-            this.btnsales.Location = new System.Drawing.Point(0, 85);
-            this.btnsales.Name = "btnsales";
-            this.btnsales.Size = new System.Drawing.Size(127, 35);
-            this.btnsales.TabIndex = 6;
-            this.btnsales.Text = "Sales";
-            this.btnsales.UseVisualStyleBackColor = false;
-            // 
-            // btnproduct
-            // 
-            this.btnproduct.BackColor = System.Drawing.Color.Transparent;
-            this.btnproduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnproduct.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnproduct.ForeColor = System.Drawing.Color.White;
-            this.btnproduct.Location = new System.Drawing.Point(0, 44);
-            this.btnproduct.Name = "btnproduct";
-            this.btnproduct.Size = new System.Drawing.Size(127, 35);
-            this.btnproduct.TabIndex = 1;
-            this.btnproduct.Text = "Products";
-            this.btnproduct.UseVisualStyleBackColor = false;
-            // 
-            // Dashboardbutton
-            // 
-            this.Dashboardbutton.BackColor = System.Drawing.Color.Transparent;
-            this.Dashboardbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Dashboardbutton.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dashboardbutton.ForeColor = System.Drawing.Color.White;
-            this.Dashboardbutton.Location = new System.Drawing.Point(0, 3);
-            this.Dashboardbutton.Name = "Dashboardbutton";
-            this.Dashboardbutton.Size = new System.Drawing.Size(127, 35);
-            this.Dashboardbutton.TabIndex = 0;
-            this.Dashboardbutton.Text = "Dashboard";
-            this.Dashboardbutton.UseVisualStyleBackColor = false;
-            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -221,9 +229,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form5";
             this.Text = "Products";
+            this.panelsidebar.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panelsidebar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
