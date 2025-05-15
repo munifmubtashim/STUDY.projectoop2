@@ -1,6 +1,6 @@
 ﻿namespace projectoop2
 {
-    partial class Form5
+    partial class Form6
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbluser = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
             this.panelsidebar = new System.Windows.Forms.Panel();
             this.btnlogout = new System.Windows.Forms.Button();
             this.btnsettings = new System.Windows.Forms.Button();
@@ -42,53 +38,13 @@
             this.btnsales = new System.Windows.Forms.Button();
             this.btnproduct = new System.Windows.Forms.Button();
             this.Dashboardbutton = new System.Windows.Forms.Button();
-            this.panel5.SuspendLayout();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbluser = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panelsidebar.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel5.BackgroundImage = global::projectoop2.Properties.Resources.What_lies_Beyond;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Controls.Add(this.lbluser);
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(-1, -5);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(803, 34);
-            this.panel5.TabIndex = 18;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(605, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 17);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "lblUser(role)datetime";
-            // 
-            // lbluser
-            // 
-            this.lbluser.AutoSize = true;
-            this.lbluser.Location = new System.Drawing.Point(659, 11);
-            this.lbluser.Name = "lbluser";
-            this.lbluser.Size = new System.Drawing.Size(0, 16);
-            this.lbluser.TabIndex = 27;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.861538F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(12, 7);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(228, 21);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "StoreTrack Inventory System";
             // 
             // panelsidebar
             // 
@@ -105,7 +61,7 @@
             this.panelsidebar.Location = new System.Drawing.Point(-1, 27);
             this.panelsidebar.Name = "panelsidebar";
             this.panelsidebar.Size = new System.Drawing.Size(127, 428);
-            this.panelsidebar.TabIndex = 19;
+            this.panelsidebar.TabIndex = 21;
             // 
             // btnlogout
             // 
@@ -211,7 +167,51 @@
             this.Dashboardbutton.Text = "Dashboard";
             this.Dashboardbutton.UseVisualStyleBackColor = false;
             // 
-            // Form5
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel5.BackgroundImage = global::projectoop2.Properties.Resources.What_lies_Beyond;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.lbluser);
+            this.panel5.Controls.Add(this.label4);
+            this.panel5.Location = new System.Drawing.Point(-1, -5);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(803, 34);
+            this.panel5.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(605, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 17);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "lblUser(role)datetime";
+            // 
+            // lbluser
+            // 
+            this.lbluser.AutoSize = true;
+            this.lbluser.Location = new System.Drawing.Point(659, 11);
+            this.lbluser.Name = "lbluser";
+            this.lbluser.Size = new System.Drawing.Size(0, 16);
+            this.lbluser.TabIndex = 27;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.861538F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(12, 7);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(228, 21);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "StoreTrack Inventory System";
+            // 
+            // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -219,21 +219,17 @@
             this.Controls.Add(this.panelsidebar);
             this.Controls.Add(this.panel5);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form5";
-            this.Text = "Products";
+            this.Name = "Form6";
+            this.Text = "Sales";
+            this.panelsidebar.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panelsidebar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbluser;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panelsidebar;
         private System.Windows.Forms.Button btnlogout;
         private System.Windows.Forms.Button btnsettings;
@@ -243,5 +239,9 @@
         private System.Windows.Forms.Button btnsales;
         private System.Windows.Forms.Button btnproduct;
         private System.Windows.Forms.Button Dashboardbutton;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbluser;
+        private System.Windows.Forms.Label label4;
     }
 }
