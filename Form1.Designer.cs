@@ -35,7 +35,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureeye = new System.Windows.Forms.PictureBox();
             this.newacc = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.login = new System.Windows.Forms.Button();
             this.textusername = new System.Windows.Forms.TextBox();
@@ -64,7 +63,6 @@
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel3.Controls.Add(this.pictureeye);
             this.panel3.Controls.Add(this.newacc);
-            this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.login);
             this.panel3.Controls.Add(this.textusername);
@@ -111,19 +109,6 @@
             this.newacc.Text = "Create new account";
             this.newacc.UseVisualStyleBackColor = false;
             this.newacc.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Location = new System.Drawing.Point(169, 273);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 19);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Forgotten password?";
             // 
             // label3
             // 
@@ -322,7 +307,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button newacc;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;

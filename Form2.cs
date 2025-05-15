@@ -8,12 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace projectoop2
 {
     public partial class Form2: Form
     { private string _username;
         private string _role;
+        
+
         public Form2(string username,string role)
         {
             InitializeComponent();
@@ -105,6 +108,22 @@ namespace projectoop2
         }
 
         private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dashboardbutton_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnproduct_Click(object sender, EventArgs e)
+        {
+            Form5 products = new Form5 (_username,_role);
+            products.Show();
+            this.Hide();
+        }
+
+        private void btnsales_Click(object sender, EventArgs e)
         {
 
         }
