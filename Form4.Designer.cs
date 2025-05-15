@@ -1,6 +1,6 @@
 ﻿namespace projectoop2
 {
-    partial class Form4
+    partial class Signup
     {
         /// <summary>
         /// Required designer variable.
@@ -28,72 +28,101 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cboxacctype = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.dtb = new System.Windows.Forms.DateTimePicker();
+            this.rbfemale = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbmale = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.textBoxpassword = new System.Windows.Forms.TextBox();
+            this.txtconpass = new System.Windows.Forms.TextBox();
+            this.piceye = new System.Windows.Forms.PictureBox();
+            this.txtpass = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnsignup = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textboxusername = new System.Windows.Forms.TextBox();
+            this.txtusername = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piceye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoSize = true;
+            this.panel1.BackColor = System.Drawing.SystemColors.HighlightText;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cboxacctype);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.dtb);
+            this.panel1.Controls.Add(this.rbfemale);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.rbmale);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.textBoxpassword);
+            this.panel1.Controls.Add(this.txtconpass);
+            this.panel1.Controls.Add(this.piceye);
+            this.panel1.Controls.Add(this.txtpass);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnsignup);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textboxusername);
+            this.panel1.Controls.Add(this.txtusername);
+            this.panel1.Controls.Add(this.txtemail);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(432, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(30, 25, 30, 25);
-            this.panel1.Size = new System.Drawing.Size(350, 551);
+            this.panel1.Size = new System.Drawing.Size(368, 551);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // cboxacctype
+            // 
+            this.cboxacctype.FormattingEnabled = true;
+            this.cboxacctype.Items.AddRange(new object[] {
+            "Admin",
+            "Manager",
+            "Stock Keeper",
+            "Sales Clork",
+            "Customer"});
+            this.cboxacctype.Location = new System.Drawing.Point(39, 343);
+            this.cboxacctype.Name = "cboxacctype";
+            this.cboxacctype.Size = new System.Drawing.Size(121, 25);
+            this.cboxacctype.TabIndex = 43;
+            this.cboxacctype.Text = "Admin";
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(36, 323);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(95, 17);
+            this.label11.TabIndex = 42;
+            this.label11.Text = "Account Type:";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label10
             // 
@@ -107,30 +136,30 @@
             this.label10.TabIndex = 40;
             this.label10.Text = "Date of birth:";
             // 
-            // dateTimePicker1
+            // dtb
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dtb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(128, 410);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(176, 25);
-            this.dateTimePicker1.TabIndex = 39;
+            this.dtb.CalendarFont = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtb.Location = new System.Drawing.Point(128, 410);
+            this.dtb.Name = "dtb";
+            this.dtb.Size = new System.Drawing.Size(194, 25);
+            this.dtb.TabIndex = 39;
             // 
-            // radioButton2
+            // rbfemale
             // 
-            this.radioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.rbfemale.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(243, 358);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(73, 21);
-            this.radioButton2.TabIndex = 38;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.rbfemale.AutoSize = true;
+            this.rbfemale.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbfemale.Location = new System.Drawing.Point(243, 358);
+            this.rbfemale.Name = "rbfemale";
+            this.rbfemale.Size = new System.Drawing.Size(73, 21);
+            this.rbfemale.TabIndex = 38;
+            this.rbfemale.TabStop = true;
+            this.rbfemale.Text = "Female";
+            this.rbfemale.UseVisualStyleBackColor = true;
+            this.rbfemale.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // label9
             // 
@@ -145,20 +174,20 @@
             this.label9.Text = "Gender:";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // radioButton1
+            // rbmale
             // 
-            this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.rbmale.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(243, 327);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(59, 21);
-            this.radioButton1.TabIndex = 36;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.rbmale.AutoSize = true;
+            this.rbmale.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbmale.Location = new System.Drawing.Point(243, 327);
+            this.rbmale.Name = "rbmale";
+            this.rbmale.Size = new System.Drawing.Size(59, 21);
+            this.rbmale.TabIndex = 36;
+            this.rbmale.TabStop = true;
+            this.rbmale.Text = "Male";
+            this.rbmale.UseVisualStyleBackColor = true;
+            this.rbmale.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // label8
             // 
@@ -208,42 +237,47 @@
             this.label5.TabIndex = 32;
             this.label5.Text = "Confirm Password:";
             // 
-            // textBox3
+            // txtconpass
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtconpass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Gray;
-            this.textBox3.Location = new System.Drawing.Point(183, 214);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(104, 26);
-            this.textBox3.TabIndex = 30;
+            this.txtconpass.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtconpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtconpass.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtconpass.ForeColor = System.Drawing.Color.Gray;
+            this.txtconpass.Location = new System.Drawing.Point(183, 214);
+            this.txtconpass.Name = "txtconpass";
+            this.txtconpass.Size = new System.Drawing.Size(122, 26);
+            this.txtconpass.TabIndex = 30;
+            this.txtconpass.UseSystemPasswordChar = true;
             // 
-            // pictureBox5
+            // piceye
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::projectoop2.Properties.Resources.icons8_eye_24;
-            this.pictureBox5.Location = new System.Drawing.Point(310, 214);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(23, 17);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 29;
-            this.pictureBox5.TabStop = false;
+            this.piceye.BackColor = System.Drawing.Color.Transparent;
+            this.piceye.Image = global::projectoop2.Properties.Resources.icons8_eye_24;
+            this.piceye.Location = new System.Drawing.Point(310, 214);
+            this.piceye.Name = "piceye";
+            this.piceye.Size = new System.Drawing.Size(23, 17);
+            this.piceye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.piceye.TabIndex = 29;
+            this.piceye.TabStop = false;
+            this.piceye.Click += new System.EventHandler(this.piceye_Click);
+            this.piceye.MouseDown += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseDown);
+            this.piceye.MouseUp += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseUp);
             // 
-            // textBoxpassword
+            // txtpass
             // 
-            this.textBoxpassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtpass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxpassword.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBoxpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxpassword.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxpassword.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxpassword.Location = new System.Drawing.Point(39, 214);
-            this.textBoxpassword.Name = "textBoxpassword";
-            this.textBoxpassword.Size = new System.Drawing.Size(104, 26);
-            this.textBoxpassword.TabIndex = 28;
+            this.txtpass.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpass.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpass.ForeColor = System.Drawing.Color.Gray;
+            this.txtpass.Location = new System.Drawing.Point(39, 214);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.Size = new System.Drawing.Size(122, 26);
+            this.txtpass.TabIndex = 28;
+            this.txtpass.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -283,37 +317,38 @@
             this.btnsignup.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnsignup.Location = new System.Drawing.Point(81, 469);
             this.btnsignup.Name = "btnsignup";
-            this.btnsignup.Size = new System.Drawing.Size(180, 30);
+            this.btnsignup.Size = new System.Drawing.Size(198, 30);
             this.btnsignup.TabIndex = 24;
             this.btnsignup.Text = "Sign Up";
             this.btnsignup.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtusername
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtusername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(39, 275);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(248, 26);
-            this.textBox1.TabIndex = 20;
+            this.txtusername.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtusername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtusername.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusername.ForeColor = System.Drawing.Color.Gray;
+            this.txtusername.Location = new System.Drawing.Point(39, 275);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(266, 26);
+            this.txtusername.TabIndex = 20;
             // 
-            // textboxusername
+            // txtemail
             // 
-            this.textboxusername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtemail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textboxusername.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textboxusername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textboxusername.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxusername.ForeColor = System.Drawing.Color.Gray;
-            this.textboxusername.Location = new System.Drawing.Point(39, 147);
-            this.textboxusername.Name = "textboxusername";
-            this.textboxusername.Size = new System.Drawing.Size(238, 26);
-            this.textboxusername.TabIndex = 19;
-            this.textboxusername.Text = " ";
+            this.txtemail.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtemail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtemail.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemail.ForeColor = System.Drawing.Color.Gray;
+            this.txtemail.Location = new System.Drawing.Point(39, 147);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(256, 26);
+            this.txtemail.TabIndex = 19;
+            this.txtemail.Text = " ";
+            this.txtemail.TextChanged += new System.EventHandler(this.txtemail_TextChanged);
             // 
             // pictureBox1
             // 
@@ -364,66 +399,25 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::projectoop2.Properties.Resources.klara_vernarcova_60zqbdiLHg0_unsplash;
-            this.pictureBox2.Location = new System.Drawing.Point(-9, -11);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(457, 568);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 26;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(36, 323);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 17);
-            this.label11.TabIndex = 42;
-            this.label11.Text = "Account Type:";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Admin",
-            "Manager",
-            "Stock Keeper",
-            "Sales Clork",
-            "Customer"});
-            this.comboBox1.Location = new System.Drawing.Point(39, 343);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 25);
-            this.comboBox1.TabIndex = 43;
-            this.comboBox1.Text = "Admin";
-            // 
-            // Form4
+            // Signup
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BackgroundImage = global::projectoop2.Properties.Resources.Dark_Skies;
+            this.BackgroundImage = global::projectoop2.Properties.Resources.IMG_2005;
             this.ClientSize = new System.Drawing.Size(782, 551);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form4";
+            this.Name = "Signup";
             this.Text = "Sign up";
             this.Load += new System.EventHandler(this.Form4_Load);
             this.Click += new System.EventHandler(this.Form4_Click);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piceye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -434,28 +428,27 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textboxusername;
+        private System.Windows.Forms.TextBox txtusername;
+        private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Button btnsignup;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TextBox textBoxpassword;
+        private System.Windows.Forms.TextBox txtconpass;
+        private System.Windows.Forms.PictureBox piceye;
+        private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbmale;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.DateTimePicker dtb;
+        private System.Windows.Forms.RadioButton rbfemale;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboxacctype;
     }
 }

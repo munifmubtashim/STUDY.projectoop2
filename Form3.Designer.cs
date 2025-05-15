@@ -1,6 +1,6 @@
 ﻿namespace projectoop2
 {
-    partial class Form3
+    partial class wlc
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(wlc));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonlogin = new System.Windows.Forms.Button();
+            this.btnsignin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,34 +58,34 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Welcome to StoreTrack!";
             // 
-            // buttonlogin
+            // btnsignin
             // 
-            this.buttonlogin.BackColor = System.Drawing.Color.Transparent;
-            this.buttonlogin.BackgroundImage = global::projectoop2.Properties.Resources.Blu;
-            this.buttonlogin.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.buttonlogin.Font = new System.Drawing.Font("Segoe UI Semibold", 7.753846F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonlogin.ForeColor = System.Drawing.Color.Black;
-            this.buttonlogin.Location = new System.Drawing.Point(330, 281);
-            this.buttonlogin.Name = "buttonlogin";
-            this.buttonlogin.Size = new System.Drawing.Size(107, 51);
-            this.buttonlogin.TabIndex = 22;
-            this.buttonlogin.Text = "Sign In";
-            this.buttonlogin.UseVisualStyleBackColor = false;
-            this.buttonlogin.Click += new System.EventHandler(this.buttonlogin_Click);
+            this.btnsignin.BackColor = System.Drawing.Color.Transparent;
+            this.btnsignin.BackgroundImage = global::projectoop2.Properties.Resources.Blu;
+            this.btnsignin.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnsignin.Font = new System.Drawing.Font("Segoe UI Semibold", 7.753846F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsignin.ForeColor = System.Drawing.Color.Black;
+            this.btnsignin.Location = new System.Drawing.Point(330, 281);
+            this.btnsignin.Name = "btnsignin";
+            this.btnsignin.Size = new System.Drawing.Size(107, 51);
+            this.btnsignin.TabIndex = 22;
+            this.btnsignin.Text = "Sign In";
+            this.btnsignin.UseVisualStyleBackColor = false;
+            this.btnsignin.Click += new System.EventHandler(this.buttonlogin_Click);
             // 
-            // Form3
+            // wlc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::projectoop2.Properties.Resources.Blu;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonlogin);
+            this.Controls.Add(this.btnsignin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form3";
+            this.Name = "wlc";
             this.Text = "StoreTrack";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.Click += new System.EventHandler(this.Form3_Click);
@@ -99,6 +99,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonlogin;
+        private System.Windows.Forms.Button btnsignin;
     }
 }

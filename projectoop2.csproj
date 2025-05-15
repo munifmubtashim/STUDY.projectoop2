@@ -228,5 +228,8 @@
   <ItemGroup>
     <None Include="Resources\klara-vernarcova-60zqbdiLHg0-unsplash.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_2005.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

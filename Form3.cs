@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace projectoop2
 {
-    public partial class Form3: Form
+    public partial class wlc: Form
     {
-        public Form3()
+        public wlc()
         {
             InitializeComponent();
         }

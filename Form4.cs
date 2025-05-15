@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace projectoop2
 {
-    public partial class Form4: Form
+    public partial class Signup: Form
     {
-        public Form4()
+        public Signup()
         {
             InitializeComponent();
         }
@@ -72,6 +72,28 @@ namespace projectoop2
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtemail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void piceye_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void piceye_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtpass.UseSystemPasswordChar = true;
+            txtconpass.UseSystemPasswordChar = true;
+        }
+
+        private void piceye_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtpass.UseSystemPasswordChar = false;
+            txtconpass.UseSystemPasswordChar = false;
         }
     }
 }

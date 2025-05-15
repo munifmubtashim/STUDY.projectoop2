@@ -253,6 +253,16 @@ namespace projectoop2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IMG_2005 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_2005", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kadarius_seegars_DevJkLB3hWE_unsplash {
             get {
                 object obj = ResourceManager.GetObject("kadarius-seegars-DevJkLB3hWE-unsplash", resourceCulture);

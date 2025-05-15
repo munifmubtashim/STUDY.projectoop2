@@ -49,7 +49,7 @@ namespace projectoop2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form4 Form4 = new Form4();
+            Signup Form4 = new Signup();
             Form4.Show();
             this.Hide();
         }
