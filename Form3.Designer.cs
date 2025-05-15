@@ -54,7 +54,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 26.03077F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(146, 158);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(533, 62);
+            this.label1.Size = new System.Drawing.Size(497, 60);
             this.label1.TabIndex = 2;
             this.label1.Text = "Welcome to StoreTrack!";
             // 
@@ -77,7 +77,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::projectoop2.Properties.Resources.Dark_Skies;
+            this.BackgroundImage = global::projectoop2.Properties.Resources.eXpresso;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnsignin);
             this.Controls.Add(this.label1);
