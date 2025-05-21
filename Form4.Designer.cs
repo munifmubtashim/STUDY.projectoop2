@@ -36,23 +36,22 @@
             this.label10 = new System.Windows.Forms.Label();
             this.dtb = new System.Windows.Forms.DateTimePicker();
             this.rbfemale = new System.Windows.Forms.RadioButton();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblgender = new System.Windows.Forms.Label();
             this.rbmale = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtconpass = new System.Windows.Forms.TextBox();
+            this.piceye = new System.Windows.Forms.PictureBox();
             this.txtpass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnsignup = new System.Windows.Forms.Button();
             this.txtusername = new System.Windows.Forms.TextBox();
             this.txtemail = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.piceye = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.piceye)).BeginInit();
@@ -73,7 +72,7 @@
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.dtb);
             this.panel1.Controls.Add(this.rbfemale);
-            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.lblgender);
             this.panel1.Controls.Add(this.rbmale);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
@@ -87,28 +86,27 @@
             this.panel1.Controls.Add(this.txtusername);
             this.panel1.Controls.Add(this.txtemail);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(432, 0);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 4.984615F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(428, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(30, 25, 30, 25);
-            this.panel1.Size = new System.Drawing.Size(368, 557);
+            this.panel1.Size = new System.Drawing.Size(372, 559);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lbllogin
             // 
-            this.lbllogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbllogin.AutoSize = true;
-            this.lbllogin.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbllogin.BackColor = System.Drawing.Color.Transparent;
             this.lbllogin.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lbllogin.Location = new System.Drawing.Point(231, 511);
+            this.lbllogin.Location = new System.Drawing.Point(241, 515);
+            this.lbllogin.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.lbllogin.Name = "lbllogin";
-            this.lbllogin.Size = new System.Drawing.Size(48, 19);
-            this.lbllogin.TabIndex = 26;
+            this.lbllogin.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.lbllogin.Size = new System.Drawing.Size(28, 17);
+            this.lbllogin.TabIndex = 44;
             this.lbllogin.Text = "Log In";
-            this.lbllogin.Click += new System.EventHandler(this.lbllogin_Click);
+            this.lbllogin.Click += new System.EventHandler(this.lbllogin_Click_1);
             // 
             // cboxacctype
             // 
@@ -121,7 +119,7 @@
             "Customer"});
             this.cboxacctype.Location = new System.Drawing.Point(39, 343);
             this.cboxacctype.Name = "cboxacctype";
-            this.cboxacctype.Size = new System.Drawing.Size(121, 25);
+            this.cboxacctype.Size = new System.Drawing.Size(121, 20);
             this.cboxacctype.TabIndex = 43;
             this.cboxacctype.Text = "Admin";
             // 
@@ -157,7 +155,7 @@
             this.dtb.CalendarFont = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtb.Location = new System.Drawing.Point(128, 410);
             this.dtb.Name = "dtb";
-            this.dtb.Size = new System.Drawing.Size(194, 25);
+            this.dtb.Size = new System.Drawing.Size(198, 19);
             this.dtb.TabIndex = 39;
             // 
             // rbfemale
@@ -175,18 +173,18 @@
             this.rbfemale.UseVisualStyleBackColor = true;
             this.rbfemale.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // label9
+            // lblgender
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblgender.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(180, 323);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 17);
-            this.label9.TabIndex = 37;
-            this.label9.Text = "Gender:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.lblgender.AutoSize = true;
+            this.lblgender.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblgender.Location = new System.Drawing.Point(180, 323);
+            this.lblgender.Name = "lblgender";
+            this.lblgender.Size = new System.Drawing.Size(57, 17);
+            this.lblgender.TabIndex = 37;
+            this.lblgender.Text = "Gender:";
+            this.lblgender.Click += new System.EventHandler(this.label9_Click);
             // 
             // rbmale
             // 
@@ -221,7 +219,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(36, 127);
+            this.label7.Location = new System.Drawing.Point(36, 137);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 17);
             this.label7.TabIndex = 34;
@@ -245,7 +243,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(180, 194);
+            this.label5.Location = new System.Drawing.Point(177, 194);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(124, 17);
             this.label5.TabIndex = 32;
@@ -258,12 +256,26 @@
             this.txtconpass.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtconpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtconpass.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtconpass.ForeColor = System.Drawing.Color.Gray;
-            this.txtconpass.Location = new System.Drawing.Point(183, 214);
+            this.txtconpass.ForeColor = System.Drawing.Color.Black;
+            this.txtconpass.Location = new System.Drawing.Point(180, 205);
             this.txtconpass.Name = "txtconpass";
-            this.txtconpass.Size = new System.Drawing.Size(122, 26);
+            this.txtconpass.Size = new System.Drawing.Size(129, 26);
             this.txtconpass.TabIndex = 30;
             this.txtconpass.UseSystemPasswordChar = true;
+            // 
+            // piceye
+            // 
+            this.piceye.BackColor = System.Drawing.Color.Transparent;
+            this.piceye.Image = global::projectoop2.Properties.Resources.icons8_eye_24;
+            this.piceye.Location = new System.Drawing.Point(314, 214);
+            this.piceye.Name = "piceye";
+            this.piceye.Size = new System.Drawing.Size(23, 17);
+            this.piceye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.piceye.TabIndex = 29;
+            this.piceye.TabStop = false;
+            this.piceye.Click += new System.EventHandler(this.piceye_Click);
+            this.piceye.MouseDown += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseDown);
+            this.piceye.MouseUp += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseUp);
             // 
             // txtpass
             // 
@@ -272,10 +284,10 @@
             this.txtpass.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtpass.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpass.ForeColor = System.Drawing.Color.Gray;
-            this.txtpass.Location = new System.Drawing.Point(39, 214);
+            this.txtpass.ForeColor = System.Drawing.Color.Black;
+            this.txtpass.Location = new System.Drawing.Point(39, 205);
             this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(122, 26);
+            this.txtpass.Size = new System.Drawing.Size(132, 26);
             this.txtpass.TabIndex = 28;
             this.txtpass.UseSystemPasswordChar = true;
             // 
@@ -287,9 +299,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 6.092308F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(96, 515);
+            this.label2.Location = new System.Drawing.Point(96, 517);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 13);
+            this.label2.Size = new System.Drawing.Size(142, 15);
             this.label2.TabIndex = 25;
             this.label2.Text = "Already have an account?";
             // 
@@ -303,10 +315,11 @@
             this.btnsignup.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnsignup.Location = new System.Drawing.Point(81, 469);
             this.btnsignup.Name = "btnsignup";
-            this.btnsignup.Size = new System.Drawing.Size(198, 30);
+            this.btnsignup.Size = new System.Drawing.Size(202, 30);
             this.btnsignup.TabIndex = 24;
             this.btnsignup.Text = "Sign Up";
             this.btnsignup.UseVisualStyleBackColor = false;
+            this.btnsignup.Click += new System.EventHandler(this.btnsignup_Click);
             // 
             // txtusername
             // 
@@ -315,10 +328,10 @@
             this.txtusername.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtusername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtusername.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusername.ForeColor = System.Drawing.Color.Gray;
-            this.txtusername.Location = new System.Drawing.Point(39, 275);
+            this.txtusername.ForeColor = System.Drawing.Color.Black;
+            this.txtusername.Location = new System.Drawing.Point(39, 265);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(266, 26);
+            this.txtusername.Size = new System.Drawing.Size(270, 26);
             this.txtusername.TabIndex = 20;
             // 
             // txtemail
@@ -328,25 +341,25 @@
             this.txtemail.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtemail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtemail.Font = new System.Drawing.Font("Segoe UI", 7.753846F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.ForeColor = System.Drawing.Color.Gray;
+            this.txtemail.ForeColor = System.Drawing.Color.Black;
             this.txtemail.Location = new System.Drawing.Point(39, 147);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(256, 26);
+            this.txtemail.Size = new System.Drawing.Size(270, 26);
             this.txtemail.TabIndex = 19;
             this.txtemail.Text = " ";
             this.txtemail.TextChanged += new System.EventHandler(this.txtemail_TextChanged);
             // 
-            // label1
+            // pictureBox1
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12.18462F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(100, 77);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 31);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Sign up";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::projectoop2.Properties.Resources.icons8_male_user_48;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(128, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(85, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -359,32 +372,6 @@
             this.label4.Size = new System.Drawing.Size(103, 25);
             this.label4.TabIndex = 24;
             this.label4.Text = "StoreTrack";
-            // 
-            // piceye
-            // 
-            this.piceye.BackColor = System.Drawing.Color.Transparent;
-            this.piceye.Image = global::projectoop2.Properties.Resources.icons8_eye_24;
-            this.piceye.Location = new System.Drawing.Point(310, 214);
-            this.piceye.Name = "piceye";
-            this.piceye.Size = new System.Drawing.Size(23, 17);
-            this.piceye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.piceye.TabIndex = 29;
-            this.piceye.TabStop = false;
-            this.piceye.Click += new System.EventHandler(this.piceye_Click);
-            this.piceye.MouseDown += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseDown);
-            this.piceye.MouseUp += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseUp);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::projectoop2.Properties.Resources.icons8_male_user_48;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(153, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -428,12 +415,10 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtusername;
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Button btnsignup;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lbllogin;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox txtconpass;
@@ -443,7 +428,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblgender;
         private System.Windows.Forms.RadioButton rbmale;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.DateTimePicker dtb;
@@ -451,5 +436,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox cboxacctype;
+        private System.Windows.Forms.Label lbllogin;
     }
 }

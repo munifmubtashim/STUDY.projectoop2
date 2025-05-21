@@ -7,15 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Collections;
 
 namespace projectoop2
 {
     public partial class Signup: Form
     {
+        private string connectionString;
+
         public Signup()
         {
             InitializeComponent();
         }
+    
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -94,6 +101,32 @@ namespace projectoop2
         {
             txtpass.UseSystemPasswordChar = false;
             txtconpass.UseSystemPasswordChar = false;
+        }
+
+        private void lbllogin_Click_1(object sender, EventArgs e)
+        {
+
+            Form1 login = new Form1();
+            login.Show();
+            this.Hide();
+        }
+
+        private void btnsignup_Click(object sender, EventArgs e)
+        {
+            string connectionString = @"Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
+            SqlConnection conn = new SqlConnection(connectionString);
+            string query = "INSERT INTO Signup VALUES (@Email,@Password,@Username,@[Account Type],@Gender,@[Date of Birth])";
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@Email", txtemail.Text);
+            cmd.Parameters.AddWithValue("@Password", txtpass.Text);
+            cmd.Parameters.AddWithValue("@[Account Type]", cboxacctype.SelectedItem.ToString());
+            cmd.Parameters.AddWithValue("@Gender", lblgender.Text);
+            cmd.Parameters.AddWithValue("@[Date of Birth]", dtb.Value);
+            cmd.ExecuteNonQuery();
+
+
+
         }
     }
 }
