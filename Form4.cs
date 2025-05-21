@@ -1,16 +1,17 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
-using System.Collections;
 
 namespace projectoop2
 {
@@ -112,6 +113,18 @@ namespace projectoop2
 
         private void btnsignup_Click(object sender, EventArgs e)
         {
+            string gender = "";
+            if(rbmale.Checked)
+            {                 gender = "Male";
+            }
+            else if (rbfemale.Checked)
+            {
+                gender= "Female";
+            }
+            else 
+            {
+                MessageBox.Show("Select Gender");
+            }
             string connectionString = @"Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
             SqlConnection conn = new SqlConnection(connectionString);
             string query = "INSERT INTO Signup VALUES (@Email,@Password,@Username,@[Account Type],@Gender,@[Date of Birth])";
@@ -120,12 +133,28 @@ namespace projectoop2
             cmd.Parameters.AddWithValue("@Email", txtemail.Text);
             cmd.Parameters.AddWithValue("@Password", txtpass.Text);
             cmd.Parameters.AddWithValue("@[Account Type]", cboxacctype.SelectedItem.ToString());
-            cmd.Parameters.AddWithValue("@Gender", lblgender.Text);
+            cmd.Parameters.AddWithValue("@Gender", gender);
             cmd.Parameters.AddWithValue("@[Date of Birth]", dtb.Value);
             cmd.ExecuteNonQuery();
 
 
 
+        }
+
+        private void txtpass_TextChanged(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(txtpass.Text) || string.IsNullOrEmpty(txtconpass.Text))
+            {
+                lblerror.Visible= false;
+            }
+            else if (txtpass.Text == txtconpass.Text)
+            {
+                lblerror.Visible = true;
+            }
+            else
+            {
+                lblerror.Visible = false;
+            }
         }
     }
 }
