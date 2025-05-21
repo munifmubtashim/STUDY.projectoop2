@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,17 @@ namespace projectoop2
         {
             InitializeComponent();
         }
+        private void connect()
+        {
+            string connectionString = @"Data Source=DESKTOP-OCNS2DA\SQLEXPRESS;InitialCatalog=HUMSDb;Integrated Security=True";
+            
+            Catalog = HUMSDb; Integrated Security = True; Trust Server Certificate = True";
+SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+            //string query = "INSERT INTO FACULTY VALUES(101,'SADIA','sadia@aiub.edu',50000.0,'CS')";
+            string query = "INSERT INTO FACULTY VALUES('"+txtemail.Text+"', '"+txtpass.Text+"', +'"+txtusername.Text+"', '"+cboxacctype.Text+"')";
+SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.ExecuteNonQuery();
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

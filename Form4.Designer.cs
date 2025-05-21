@@ -43,16 +43,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtconpass = new System.Windows.Forms.TextBox();
+            this.piceye = new System.Windows.Forms.PictureBox();
             this.txtpass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnsignup = new System.Windows.Forms.Button();
             this.txtusername = new System.Windows.Forms.TextBox();
             this.txtemail = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.piceye = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.piceye)).BeginInit();
@@ -105,7 +105,7 @@
             this.lbllogin.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lbllogin.Location = new System.Drawing.Point(231, 511);
             this.lbllogin.Name = "lbllogin";
-            this.lbllogin.Size = new System.Drawing.Size(48, 19);
+            this.lbllogin.Size = new System.Drawing.Size(44, 17);
             this.lbllogin.TabIndex = 26;
             this.lbllogin.Text = "Log In";
             this.lbllogin.Click += new System.EventHandler(this.lbllogin_Click);
@@ -121,7 +121,7 @@
             "Customer"});
             this.cboxacctype.Location = new System.Drawing.Point(39, 343);
             this.cboxacctype.Name = "cboxacctype";
-            this.cboxacctype.Size = new System.Drawing.Size(121, 25);
+            this.cboxacctype.Size = new System.Drawing.Size(121, 23);
             this.cboxacctype.TabIndex = 43;
             this.cboxacctype.Text = "Admin";
             // 
@@ -133,7 +133,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(36, 323);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 17);
+            this.label11.Size = new System.Drawing.Size(85, 15);
             this.label11.TabIndex = 42;
             this.label11.Text = "Account Type:";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -146,7 +146,7 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(33, 416);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(92, 17);
+            this.label10.Size = new System.Drawing.Size(82, 15);
             this.label10.TabIndex = 40;
             this.label10.Text = "Date of birth:";
             // 
@@ -157,7 +157,7 @@
             this.dtb.CalendarFont = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtb.Location = new System.Drawing.Point(128, 410);
             this.dtb.Name = "dtb";
-            this.dtb.Size = new System.Drawing.Size(194, 25);
+            this.dtb.Size = new System.Drawing.Size(194, 23);
             this.dtb.TabIndex = 39;
             // 
             // rbfemale
@@ -168,7 +168,7 @@
             this.rbfemale.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbfemale.Location = new System.Drawing.Point(243, 358);
             this.rbfemale.Name = "rbfemale";
-            this.rbfemale.Size = new System.Drawing.Size(73, 21);
+            this.rbfemale.Size = new System.Drawing.Size(68, 19);
             this.rbfemale.TabIndex = 38;
             this.rbfemale.TabStop = true;
             this.rbfemale.Text = "Female";
@@ -183,7 +183,7 @@
             this.label9.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(180, 323);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 17);
+            this.label9.Size = new System.Drawing.Size(52, 15);
             this.label9.TabIndex = 37;
             this.label9.Text = "Gender:";
             this.label9.Click += new System.EventHandler(this.label9_Click);
@@ -196,7 +196,7 @@
             this.rbmale.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbmale.Location = new System.Drawing.Point(243, 327);
             this.rbmale.Name = "rbmale";
-            this.rbmale.Size = new System.Drawing.Size(59, 21);
+            this.rbmale.Size = new System.Drawing.Size(55, 19);
             this.rbmale.TabIndex = 36;
             this.rbmale.TabStop = true;
             this.rbmale.Text = "Male";
@@ -211,7 +211,7 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(36, 255);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(73, 17);
+            this.label8.Size = new System.Drawing.Size(67, 15);
             this.label8.TabIndex = 35;
             this.label8.Text = "Username:";
             // 
@@ -223,7 +223,7 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(36, 127);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 17);
+            this.label7.Size = new System.Drawing.Size(39, 15);
             this.label7.TabIndex = 34;
             this.label7.Text = "Email:";
             // 
@@ -235,7 +235,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(36, 194);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 17);
+            this.label6.Size = new System.Drawing.Size(62, 15);
             this.label6.TabIndex = 33;
             this.label6.Text = "Password:";
             // 
@@ -247,7 +247,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(180, 194);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 17);
+            this.label5.Size = new System.Drawing.Size(110, 15);
             this.label5.TabIndex = 32;
             this.label5.Text = "Confirm Password:";
             // 
@@ -261,9 +261,23 @@
             this.txtconpass.ForeColor = System.Drawing.Color.Gray;
             this.txtconpass.Location = new System.Drawing.Point(183, 214);
             this.txtconpass.Name = "txtconpass";
-            this.txtconpass.Size = new System.Drawing.Size(122, 26);
+            this.txtconpass.Size = new System.Drawing.Size(122, 25);
             this.txtconpass.TabIndex = 30;
             this.txtconpass.UseSystemPasswordChar = true;
+            // 
+            // piceye
+            // 
+            this.piceye.BackColor = System.Drawing.Color.Transparent;
+            this.piceye.Image = global::projectoop2.Properties.Resources.icons8_eye_24;
+            this.piceye.Location = new System.Drawing.Point(310, 214);
+            this.piceye.Name = "piceye";
+            this.piceye.Size = new System.Drawing.Size(23, 17);
+            this.piceye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.piceye.TabIndex = 29;
+            this.piceye.TabStop = false;
+            this.piceye.Click += new System.EventHandler(this.piceye_Click);
+            this.piceye.MouseDown += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseDown);
+            this.piceye.MouseUp += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseUp);
             // 
             // txtpass
             // 
@@ -275,7 +289,7 @@
             this.txtpass.ForeColor = System.Drawing.Color.Gray;
             this.txtpass.Location = new System.Drawing.Point(39, 214);
             this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(122, 26);
+            this.txtpass.Size = new System.Drawing.Size(122, 25);
             this.txtpass.TabIndex = 28;
             this.txtpass.UseSystemPasswordChar = true;
             // 
@@ -318,7 +332,7 @@
             this.txtusername.ForeColor = System.Drawing.Color.Gray;
             this.txtusername.Location = new System.Drawing.Point(39, 275);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(266, 26);
+            this.txtusername.Size = new System.Drawing.Size(266, 25);
             this.txtusername.TabIndex = 20;
             // 
             // txtemail
@@ -331,10 +345,22 @@
             this.txtemail.ForeColor = System.Drawing.Color.Gray;
             this.txtemail.Location = new System.Drawing.Point(39, 147);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(256, 26);
+            this.txtemail.Size = new System.Drawing.Size(256, 25);
             this.txtemail.TabIndex = 19;
             this.txtemail.Text = " ";
             this.txtemail.TextChanged += new System.EventHandler(this.txtemail_TextChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::projectoop2.Properties.Resources.icons8_male_user_48;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(153, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -356,35 +382,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(48, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 25);
+            this.label4.Size = new System.Drawing.Size(96, 23);
             this.label4.TabIndex = 24;
             this.label4.Text = "StoreTrack";
-            // 
-            // piceye
-            // 
-            this.piceye.BackColor = System.Drawing.Color.Transparent;
-            this.piceye.Image = global::projectoop2.Properties.Resources.icons8_eye_24;
-            this.piceye.Location = new System.Drawing.Point(310, 214);
-            this.piceye.Name = "piceye";
-            this.piceye.Size = new System.Drawing.Size(23, 17);
-            this.piceye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.piceye.TabIndex = 29;
-            this.piceye.TabStop = false;
-            this.piceye.Click += new System.EventHandler(this.piceye_Click);
-            this.piceye.MouseDown += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseDown);
-            this.piceye.MouseUp += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseUp);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::projectoop2.Properties.Resources.icons8_male_user_48;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(153, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox4
             // 
