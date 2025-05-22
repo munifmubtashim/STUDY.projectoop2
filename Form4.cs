@@ -138,6 +138,10 @@ namespace projectoop2
             cmd.Parameters.AddWithValue("@Gender", gender);
             cmd.Parameters.AddWithValue("@DateofBirth", dtb.Value);
             cmd.ExecuteNonQuery();
+            MessageBox.Show("Sign up Successfull!");
+            Form1 login = new Form1();
+            login.Show();
+            this.Hide();
 
 
 
