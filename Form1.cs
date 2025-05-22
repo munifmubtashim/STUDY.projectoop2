@@ -90,6 +90,9 @@ namespace projectoop2
                         if (count == 1)
                         {
                             MessageBox.Show("Login successful!");
+                            Form2 dashboard = new Form2(username, role);
+                            dashboard.Show();
+                            this.Hide();
                             // Proceed to next form or dashboard
                         }
                         else
@@ -105,8 +108,14 @@ namespace projectoop2
             }
         }
     }
-
-}
+                
+                Form2 dashboard = new Form2(username, role);
+                dashboard.Show();
+                this.Hide();
+            }
+            
+           
+        }
 
         
 
