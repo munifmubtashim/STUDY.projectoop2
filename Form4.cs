@@ -1,11 +1,11 @@
-﻿using Microsoft.Data.SqlClient;
+﻿
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Data.SqlClient;
+
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -127,14 +127,16 @@ namespace projectoop2
             }
             string connectionString = @"Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
             SqlConnection conn = new SqlConnection(connectionString);
-            string query = "INSERT INTO Signup VALUES (@Email,@Password,@Username,@[Account Type],@Gender,@[Date of Birth])";
+            string query = "INSERT INTO Signup ([Email], [Password], [Username], [AccountType], [Gender], [DateofBirth]) VALUES (@Email, @Password, @Username, @AccountType, @Gender, @DateOfBirth)";
+
             conn.Open();
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@Email", txtemail.Text);
             cmd.Parameters.AddWithValue("@Password", txtpass.Text);
-            cmd.Parameters.AddWithValue("@[Account Type]", cboxacctype.SelectedItem.ToString());
+            cmd.Parameters.AddWithValue("@Username", txtusername.Text);
+            cmd.Parameters.AddWithValue("@AccountType", cboxacctype.SelectedItem.ToString());
             cmd.Parameters.AddWithValue("@Gender", gender);
-            cmd.Parameters.AddWithValue("@[Date of Birth]", dtb.Value);
+            cmd.Parameters.AddWithValue("@DateofBirth", dtb.Value);
             cmd.ExecuteNonQuery();
 
 
@@ -149,11 +151,11 @@ namespace projectoop2
             }
             else if (txtpass.Text == txtconpass.Text)
             {
-                lblerror.Visible = true;
+                lblerror.Visible = false;
             }
             else
             {
-                lblerror.Visible = false;
+                lblerror.Visible = true;
             }
         }
     }
