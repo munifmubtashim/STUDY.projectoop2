@@ -65,21 +65,48 @@ namespace projectoop2
         }
 
         private void buttonlogin_Click(object sender, EventArgs e)
-        { if  (textusername.Text == "admin" && textpassword.Text == "admin")
+        {
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text.Trim();
+
+            // Connection string - replace with your actual server name and DB
+            string connectionString = "Server=YOUR_SERVER;Database=YOUR_DB;Trusted_Connection=True;";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string username = textusername.Text;
-                string role = "Admin";
-                
-                Form2 dashboard = new Form2(username, role);
-                dashboard.Show();
-                this.Hide();
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT COUNT(1) FROM Users WHERE Username = @Username AND Password = @Password";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        // Use parameters to avoid SQL injection
+                        cmd.Parameters.AddWithValue("@Username", username);
+                        cmd.Parameters.AddWithValue("@Password", password);
+
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                        if (count == 1)
+                        {
+                            MessageBox.Show("Login successful!");
+                            // Proceed to next form or dashboard
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password.");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
             }
-            else
-            {
-                MessageBox.Show("Invalid username or password");
-            }
-           
         }
+    }
+
+}
 
         
 
