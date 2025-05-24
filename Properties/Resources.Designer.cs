@@ -193,6 +193,16 @@ namespace projectoop2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_download_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-download-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_eye {
             get {
                 object obj = ResourceManager.GetObject("icons8-eye", resourceCulture);

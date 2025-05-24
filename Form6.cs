@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace projectoop2
 {
@@ -26,6 +29,14 @@ namespace projectoop2
         {
             string currentDateTime = DateTime.Now.ToString("dd/MM/yyyy");
             label1.Text = $"{_username} ({_role}) | {currentDateTime}";
+           
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+            string query = "SELECT * FROM Sales";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+            SqlCommandBuilder builder = new SqlCommandBuilder(adapter);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
 
 
 
@@ -115,6 +126,37 @@ namespace projectoop2
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void pbrefresh_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+            string query = "SELECT * FROM Sales";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+            SqlCommandBuilder builder = new SqlCommandBuilder(adapter);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+            string query = "INSERT INTO Product ([ID], [Product],[Quantity], [TotalAmount]) VALUES (@ID, @Product, @Quantity, @TotalAmount)";
+
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@ID", textBox1.Text);
+            cmd.Parameters.AddWithValue("@Product", textBox2.Text);
+            cmd.Parameters.AddWithValue("@Quantity", textBox3.Text);
+            cmd.Parameters.AddWithValue("@TotalAmount", textBox4.Text);
+            
+
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Sales added Successfully!");
 
         }
     }   
