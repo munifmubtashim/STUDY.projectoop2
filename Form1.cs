@@ -129,8 +129,8 @@ private void label5_Click(object sender, EventArgs e)
 
 private void textusername_TextChanged(object sender, EventArgs e)
 {
-
-}
+            textusername.Text = _username;
+        }
 
 private void label7_Click(object sender, EventArgs e)
 {
