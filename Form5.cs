@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace projectoop2
 {
@@ -112,12 +113,52 @@ namespace projectoop2
 
         private void Form5_Load_1(object sender, EventArgs e)
         {
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+            string query = "SELECT * FROM Product";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+            SqlCommandBuilder builder = new SqlCommandBuilder(adapter);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+
+
 
         }
 
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+            string query = "INSERT INTO Product ([ID], [Name], [Catagory], [Quantity], [Price]) VALUES (@ID, @Name, @Catagory, @Quantity, @Price)";
+
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@ID", textBox1.Text);
+            cmd.Parameters.AddWithValue("@Name", textBox2.Text);
+            cmd.Parameters.AddWithValue("@Catagory", textBox3.Text);
+            cmd.Parameters.AddWithValue("@Quantity", textBox4.Text);
+            cmd.Parameters.AddWithValue("@Price", textBox5.Text);
+
+            int count = (int)cmd.ExecuteScalar();
+            conn.Close();
+            if (count > 0)
+            {
+                MessageBox.Show("Product added successfully.");
+            }
+            else
+            {
+                MessageBox.Show("Failed to add product.");
+            }
         }
     }
 }

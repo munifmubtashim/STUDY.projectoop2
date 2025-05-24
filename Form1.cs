@@ -79,7 +79,7 @@ namespace projectoop2
         {
             
             
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True,Tru");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
             conn.Open();
             string query = "SELECT COUNT(*) Signup WHERE username=@username AND password=@password";
             SqlCommand cmd = new SqlCommand(query,conn);
