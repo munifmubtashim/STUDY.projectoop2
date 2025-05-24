@@ -9,11 +9,14 @@ namespace projectoop2
 {
     class Program
     {
+        private static string _username;
+        private static string _role;
+
         static void Main(string[] args)
-        {
-            Application.EnableVisualStyles();
+        { 
+        Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new wlc());
+            Application.Run(new wlc(_username,_role));
         }
     }
 }

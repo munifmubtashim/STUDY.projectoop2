@@ -17,11 +17,15 @@ namespace projectoop2
 {
     public partial class Form1 : Form
     {
-
-        public Form1()
+        private string _username;
+        private string _role;
+       
+        public Form1(string username, string role)
         {
             InitializeComponent();
-       
+            this.Load += new System.EventHandler(this.Login_Load);
+            _username = username;
+            _role = role;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -56,7 +60,7 @@ namespace projectoop2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Signup Form4 = new Signup();
+            Signup Form4 = new Signup(_username,_role);
             Form4.Show();
             this.Hide();
         }
@@ -73,7 +77,29 @@ namespace projectoop2
 
         private void buttonlogin_Click(object sender, EventArgs e)
         {
-           
+            
+            
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+            conn.Open();
+            string query = "SELECT COUNT(*) Signup WHERE username=@username AND password=@password";
+            SqlCommand cmd = new SqlCommand(query,conn);
+            cmd.Parameters.AddWithValue("@username", textusername.Text);
+            cmd.Parameters.AddWithValue("@password", textpassword.Text);
+            int count = (int)cmd.ExecuteScalar();
+            conn.Close();
+            if (count > 0)
+            {
+                MessageBox.Show("Login Success!!");
+
+                Form2 Form2 = new Form2(_username, _role);
+                Form2.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Login Failed!");
+
+            }
 
         }
 

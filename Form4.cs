@@ -17,11 +17,16 @@ namespace projectoop2
 {
     public partial class Signup: Form
     {
-        private string connectionString;
+        private string _username;
+        private string _role;
 
-        public Signup()
+
+        public Signup(string username,string role)
         {
             InitializeComponent();
+            this.Load += new System.EventHandler(this.Form4_Load);
+            _username = username;
+            _role = role;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -61,7 +66,7 @@ namespace projectoop2
 
         private void lbllogin_Click(object sender, EventArgs e)
         {
-            Form1 Form1 = new Form1();
+            Form1 Form1 = new Form1(_username,_role);
             Form1.Show();
             this.Hide();
         }
@@ -106,7 +111,7 @@ namespace projectoop2
         private void lbllogin_Click_1(object sender, EventArgs e)
         {
 
-            Form1 login = new Form1();
+            Form1 login = new Form1(_username, _role);
             login.Show();
             this.Hide();
         }
@@ -125,8 +130,8 @@ namespace projectoop2
             {
                 MessageBox.Show("Select Gender");
             }
-            string connectionString = @"Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
-            SqlConnection conn = new SqlConnection(connectionString);
+            
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
             string query = "INSERT INTO Signup ([Email], [Password], [Username], [AccountType], [Gender], [DateofBirth]) VALUES (@Email, @Password, @Username, @AccountType, @Gender, @DateOfBirth)";
 
             conn.Open();
@@ -139,7 +144,7 @@ namespace projectoop2
             cmd.Parameters.AddWithValue("@DateofBirth", dtb.Value);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Sign up Successfull!");
-            Form1 login = new Form1();
+            Form1 login = new Form1(_username, _role);
             login.Show();
             this.Hide();
 

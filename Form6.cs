@@ -93,7 +93,7 @@ namespace projectoop2
             {
 
                 this.Hide();
-                Form1 loginForm = new Form1();
+                Form1 loginForm = new Form1(_username, _role);
                 loginForm.Show();
             }
             else if (result == DialogResult.No)
