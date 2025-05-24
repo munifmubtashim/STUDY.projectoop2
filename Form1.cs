@@ -1,5 +1,4 @@
 ﻿
-using Microsoft.Data.SqlClient;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -80,21 +79,16 @@ namespace projectoop2
         {
             
             
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True,Tru");
             conn.Open();
-            string query = "SELECT Username, Role FROM Signup WHERE username=@username AND password=@password";
+            string query = "SELECT COUNT(*) Signup WHERE username=@username AND password=@password";
             SqlCommand cmd = new SqlCommand(query,conn);
             cmd.Parameters.AddWithValue("@username", textusername.Text);
             cmd.Parameters.AddWithValue("@password", textpassword.Text);
-            conn.Open();
-            SqlDataReader reader = cmd.ExecuteReader();
-
-
-          if (reader.Read())
+            int count = (int)cmd.ExecuteScalar();
+            conn.Close();
+            if (count > 0)
             {
-                
-                _username = reader["Username"].ToString();
-                _role = reader["Role"].ToString();
                 MessageBox.Show("Login Successfull!!");
 
                 Form2 Form2 = new Form2(_username, _role);
