@@ -47,6 +47,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbrefresh = new System.Windows.Forms.PictureBox();
             this.panelsidebar = new System.Windows.Forms.Panel();
             this.btnlogout = new System.Windows.Forms.Button();
@@ -62,6 +63,7 @@
             this.lbluser = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbrefresh)).BeginInit();
             this.panelsidebar.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -226,13 +228,25 @@
             this.dataGridView1.Size = new System.Drawing.Size(412, 310);
             this.dataGridView1.TabIndex = 36;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::projectoop2.Properties.Resources.icons8_download_24;
+            this.pictureBox1.Location = new System.Drawing.Point(522, 404);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(38, 28);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            // 
             // pbrefresh
             // 
+            this.pbrefresh.BackColor = System.Drawing.Color.Transparent;
             this.pbrefresh.Image = global::projectoop2.Properties.Resources.icons8_refresh_30;
             this.pbrefresh.Location = new System.Drawing.Point(486, 404);
             this.pbrefresh.Name = "pbrefresh";
-            this.pbrefresh.Size = new System.Drawing.Size(36, 34);
-            this.pbrefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbrefresh.Size = new System.Drawing.Size(30, 30);
+            this.pbrefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbrefresh.TabIndex = 37;
             this.pbrefresh.TabStop = false;
             this.pbrefresh.Click += new System.EventHandler(this.pbrefresh_Click);
@@ -415,7 +429,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(910, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pbrefresh);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button4);
@@ -441,6 +457,7 @@
             this.Text = "Products";
             this.Load += new System.EventHandler(this.Form5_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbrefresh)).EndInit();
             this.panelsidebar.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -484,5 +501,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.PictureBox pbrefresh;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
