@@ -81,15 +81,15 @@ namespace projectoop2
             
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
             conn.Open();
-            string query = "SELECT COUNT(*) Signup WHERE username=@username AND password=@password";
+            string query = "SELECT COUNT(*) FROM Signup WHERE Username=@Username AND Password=@Password";
             SqlCommand cmd = new SqlCommand(query,conn);
-            cmd.Parameters.AddWithValue("@username", textusername.Text);
-            cmd.Parameters.AddWithValue("@password", textpassword.Text);
+            cmd.Parameters.AddWithValue("@Username", textusername.Text);
+            cmd.Parameters.AddWithValue("@Password", textpassword.Text);
             int count = (int)cmd.ExecuteScalar();
             conn.Close();
             if (count > 0)
             {
-                MessageBox.Show("Login Success!!");
+                MessageBox.Show("Login Successfull!!");
 
                 Form2 Form2 = new Form2(_username, _role);
                 Form2.Show();
