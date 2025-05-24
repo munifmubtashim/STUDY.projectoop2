@@ -145,14 +145,14 @@ namespace projectoop2
         {
 
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
-            string query = "INSERT INTO Product ([ID], [Product],[Quantity], [TotalAmount]) VALUES (@ID, @Product, @Quantity, @TotalAmount)";
+            string query = "INSERT INTO Sales ([ID], [Pname],[Quantity], [Amount]) VALUES (@ID, @Pname, @Quantity, @Amount)";
 
             conn.Open();
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@ID", textBox1.Text);
-            cmd.Parameters.AddWithValue("@Product", textBox2.Text);
+            cmd.Parameters.AddWithValue("@Pname", textBox2.Text);
             cmd.Parameters.AddWithValue("@Quantity", textBox3.Text);
-            cmd.Parameters.AddWithValue("@TotalAmount", textBox4.Text);
+            cmd.Parameters.AddWithValue("@Amount", textBox4.Text);
             
 
             cmd.ExecuteNonQuery();
