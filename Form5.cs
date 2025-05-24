@@ -149,16 +149,11 @@ namespace projectoop2
             cmd.Parameters.AddWithValue("@Quantity", textBox4.Text);
             cmd.Parameters.AddWithValue("@Price", textBox5.Text);
 
-            int count = (int)cmd.ExecuteScalar();
-            conn.Close();
-            if (count > 0)
-            {
-                MessageBox.Show("Product added successfully.");
-            }
-            else
-            {
-                MessageBox.Show("Failed to add product.");
-            }
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Product added Successfully!");
+            
+           
+            
         }
     }
 }
