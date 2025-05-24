@@ -231,8 +231,8 @@
             this.pbrefresh.Image = global::projectoop2.Properties.Resources.icons8_refresh_30;
             this.pbrefresh.Location = new System.Drawing.Point(486, 404);
             this.pbrefresh.Name = "pbrefresh";
-            this.pbrefresh.Size = new System.Drawing.Size(36, 34);
-            this.pbrefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbrefresh.Size = new System.Drawing.Size(30, 30);
+            this.pbrefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbrefresh.TabIndex = 37;
             this.pbrefresh.TabStop = false;
             this.pbrefresh.Click += new System.EventHandler(this.pbrefresh_Click);
@@ -386,7 +386,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(702, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 15);
+            this.label1.Size = new System.Drawing.Size(134, 17);
             this.label1.TabIndex = 28;
             this.label1.Text = "lblUser(role)datetime";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
@@ -407,7 +407,7 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(12, 7);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(211, 20);
+            this.label4.Size = new System.Drawing.Size(228, 21);
             this.label4.TabIndex = 26;
             this.label4.Text = "StoreTrack Inventory System";
             // 
