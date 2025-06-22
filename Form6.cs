@@ -159,5 +159,36 @@ namespace projectoop2
             MessageBox.Show("Sales added Successfully!");
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+            conn.Open();
+            string query = "UPDATE Sales SET PName='" + textBox2.Text + "',Quantity='" + textBox3.Text + "',Amount='" + textBox4.Text + "' where ID=" + textBox1.Text;
+
+
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+
+
+
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Updated Successfully!");
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            MessageBox.Show(e.RowIndex.ToString());
+            textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            textBox3.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            textBox4.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+           
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }   
 }

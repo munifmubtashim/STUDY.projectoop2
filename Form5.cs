@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Xml.Linq;
 
 namespace projectoop2
 {
@@ -165,6 +167,55 @@ namespace projectoop2
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             dataGridView1.DataSource = dt;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            MessageBox.Show(e.RowIndex.ToString());
+            textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+           textBox3.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            textBox4.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            textBox5.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+            conn.Open();
+            string query = "UPDATE Product SET Name='" + textBox2.Text + "',Catagory='" + textBox3.Text + "',Quantity=" + textBox4.Text + ",Price='" + textBox5.Text + "' where ID=" + textBox1.Text;
+
+
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+        
+
+
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Updated Successfully!");
+
+        }
+        private void clear()
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+            conn.Open();
+            string q = "DELETE FROM FACU WHERE ID=" + textBox1.Text;
+            SqlCommand cmd = new SqlCommand(q, conn);
+            cmd.ExecuteNonQuery();
+            clear();
+            MessageBox.Show("DELETED Successfully!");
+
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 using System.Windows.Forms.DataVisualization.Charting;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
@@ -27,10 +28,12 @@ namespace projectoop2
         private void Form2_Load(object sender, EventArgs e)
         {  string currentDateTime = DateTime.Now.ToString("dd/MM/yyyy");
             label1.Text = $"{_username} ({_role}) | {currentDateTime}";
-           
-          
+            LoadTotalPrice();
 
-            
+
+
+
+
         }
         private void pn1TotalProducts_Paint(object sender, PaintEventArgs e)
         {
@@ -176,6 +179,41 @@ namespace projectoop2
         private void label14_Click(object sender, EventArgs e)
         {
 
+        }
+        private void LoadTotalPrice()
+        {
+
+
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+
+            string query = "SELECT SUM(Price) FROM Product";
+
+            try
+            {
+                {
+                    conn.Open();
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != DBNull.Value)
+                        {
+                            decimal total = Convert.ToDecimal(result);
+                            label7.Text = $"{total:C}"; 
+                        }
+                        else
+                        {
+                            label7.Text = "Total: $0.00";
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                label7.Text = "Error";
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }
