@@ -13,12 +13,13 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace projectoop2
 {
-    public partial class Form2: Form
-    { private string _username;
+    public partial class Form2 : Form
+    {
+        private string _username;
         private string _role;
-        
 
-        public Form2(string username,string role)
+
+        public Form2(string username, string role)
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -26,19 +27,20 @@ namespace projectoop2
             _role = role;
         }
         private void Form2_Load(object sender, EventArgs e)
-        { string currentDateTime = DateTime.Now.ToString("dd/MM/yyyy");
+        {
+            string currentDateTime = DateTime.Now.ToString("dd/MM/yyyy");
             label1.Text = $"{_username} ({_role}) | {currentDateTime}";
             LoadTotalPrice();
             LoadTotalrevenue();
             LoadTotalsupplers();
         }
-            
-           
 
 
 
 
-        
+
+
+
         private void pn1TotalProducts_Paint(object sender, PaintEventArgs e)
         {
 
@@ -101,7 +103,7 @@ namespace projectoop2
 
         private void label7_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void chart1_Click(object sender, EventArgs e)
@@ -115,7 +117,7 @@ namespace projectoop2
 
         private void btnproduct_Click(object sender, EventArgs e)
         {
-            Form5 products = new Form5 (_username,_role);
+            Form5 products = new Form5(_username, _role);
             products.Show();
             this.Hide();
         }
@@ -168,17 +170,17 @@ namespace projectoop2
 
             if (result == DialogResult.Yes)
             {
-                
-                this.Hide(); 
-                Form1 loginForm = new Form1(_username, _role); 
+
+                this.Hide();
+                Form1 loginForm = new Form1(_username, _role);
                 loginForm.Show();
             }
             else if (result == DialogResult.No)
             {
-                
+
                 Application.Exit();
             }
-         }
+        }
 
         private void label14_Click(object sender, EventArgs e)
         {
@@ -204,7 +206,7 @@ namespace projectoop2
                         if (result != DBNull.Value)
                         {
                             decimal total = Convert.ToDecimal(result);
-                            label7.Text = $"{total:C}"; 
+                            label7.Text = $"{total:C}";
                         }
                         else
                         {
@@ -286,39 +288,30 @@ namespace projectoop2
         }
         private void LoadTotalsupplers()
         {
+            string connectionString = "Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
 
-
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
-
-            string query = "SELECT COUNT(ID) FROM Supplier";
-
-            try
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
+                try
                 {
                     conn.Open();
+                    string query = "SELECT COUNT(ID) FROM Supplier";
+                    SqlCommand cmd = new SqlCommand(query, conn);
 
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
-                    {
-                        object result = cmd.ExecuteScalar();
-
-                        if (result != DBNull.Value)
-                        {
-                            decimal total = Convert.ToDecimal(result);
-                            label15.Text = ";
-                        }
-                        else
-                        {
-                            label15.Text = "Total: 0";
-                        }
-                    }
+                    int total = (int)cmd.ExecuteScalar();
+                    label15.Text =   total.ToString();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
                 }
             }
-            catch (Exception ex)
-            {
-                label15.Text = "Error";
-                MessageBox.Show("Error: " + ex.Message);
-            }
-        }
 
+        }
     }
-}
+
+
+
+
+
+        }
