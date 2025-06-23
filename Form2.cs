@@ -30,6 +30,7 @@ namespace projectoop2
             label1.Text = $"{_username} ({_role}) | {currentDateTime}";
             LoadTotalPrice();
             LoadTotalrevenue();
+            LoadTotalsupplers();
         }
             
            
@@ -273,5 +274,51 @@ namespace projectoop2
         {
 
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void LoadTotalsupplers()
+        {
+
+
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+
+            string query = "SELECT COUNT(ID) FROM Supplier";
+
+            try
+            {
+                {
+                    conn.Open();
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != DBNull.Value)
+                        {
+                            decimal total = Convert.ToDecimal(result);
+                            label15.Text = "{total:C}";
+                        }
+                        else
+                        {
+                            label15.Text = "Total: 0";
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                label15.Text = "Error";
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
     }
 }
