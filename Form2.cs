@@ -304,7 +304,7 @@ namespace projectoop2
                         if (result != DBNull.Value)
                         {
                             decimal total = Convert.ToDecimal(result);
-                            label15.Text = "{total:C}";
+                            label15.Text = ";
                         }
                         else
                         {

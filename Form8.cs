@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Data.SqlClient;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,7 +26,14 @@ namespace projectoop2
         {
             string currentDateTime = DateTime.Now.ToString("dd/MM/yyyy");
             label1.Text = $"{_username} ({_role}) | {currentDateTime}";
-
+            
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+            string query = "SELECT * FROM Supplier";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+            SqlCommandBuilder builder = new SqlCommandBuilder(adapter);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
 
 
 
@@ -100,6 +108,16 @@ namespace projectoop2
 
                 Application.Exit();
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            MessageBox.Show(e.RowIndex.ToString());
+            textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            textBox3.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            textBox4.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
         }
     }
 }
