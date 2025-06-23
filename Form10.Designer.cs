@@ -67,7 +67,6 @@
             // 
             this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panelsidebar.BackgroundImage = global::projectoop2.Properties.Resources.Royal;
-            this.panelsidebar.Controls.Add(this.btnlogout);
             this.panelsidebar.Controls.Add(this.btnsettings);
             this.panelsidebar.Controls.Add(this.btnpurcheses);
             this.panelsidebar.Controls.Add(this.btnsuppliers);
@@ -83,14 +82,14 @@
             // 
             // btnlogout
             // 
-            this.btnlogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnlogout.BackColor = System.Drawing.Color.SteelBlue;
             this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnlogout.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogout.ForeColor = System.Drawing.Color.White;
-            this.btnlogout.Location = new System.Drawing.Point(-2, 235);
+            this.btnlogout.Location = new System.Drawing.Point(611, 0);
             this.btnlogout.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnlogout.Name = "btnlogout";
-            this.btnlogout.Size = new System.Drawing.Size(95, 29);
+            this.btnlogout.Size = new System.Drawing.Size(68, 28);
             this.btnlogout.TabIndex = 13;
             this.btnlogout.Text = "Logout";
             this.btnlogout.UseVisualStyleBackColor = false;
@@ -206,13 +205,14 @@
             this.panel5.BackColor = System.Drawing.Color.AliceBlue;
             this.panel5.BackgroundImage = global::projectoop2.Properties.Resources.What_lies_Beyond;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.btnlogout);
             this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.lbluser);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Location = new System.Drawing.Point(-1, -4);
             this.panel5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(603, 28);
+            this.panel5.Size = new System.Drawing.Size(680, 28);
             this.panel5.TabIndex = 22;
             // 
             // label1
@@ -220,7 +220,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(454, 6);
+            this.label1.Location = new System.Drawing.Point(505, 8);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 12);
@@ -395,6 +395,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Check For Updates";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label7
             // 
