@@ -34,11 +34,11 @@
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnlogout = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lbluser = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panelsidebar = new System.Windows.Forms.Panel();
-            this.btnlogout = new System.Windows.Forms.Button();
             this.btnsettings = new System.Windows.Forms.Button();
             this.btnpurcheses = new System.Windows.Forms.Button();
             this.btnsuppliers = new System.Windows.Forms.Button();
@@ -92,6 +92,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(386, 80);
             this.panel3.TabIndex = 16;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label7
             // 
@@ -149,6 +150,21 @@
             this.panel5.TabIndex = 5;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
+            // btnlogout
+            // 
+            this.btnlogout.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnlogout.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogout.ForeColor = System.Drawing.Color.White;
+            this.btnlogout.Location = new System.Drawing.Point(616, 0);
+            this.btnlogout.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnlogout.Name = "btnlogout";
+            this.btnlogout.Size = new System.Drawing.Size(68, 28);
+            this.btnlogout.TabIndex = 13;
+            this.btnlogout.Text = "Logout";
+            this.btnlogout.UseVisualStyleBackColor = false;
+            this.btnlogout.Click += new System.EventHandler(this.btnlogout_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -200,21 +216,6 @@
             this.panelsidebar.Name = "panelsidebar";
             this.panelsidebar.Size = new System.Drawing.Size(95, 348);
             this.panelsidebar.TabIndex = 4;
-            // 
-            // btnlogout
-            // 
-            this.btnlogout.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnlogout.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogout.ForeColor = System.Drawing.Color.White;
-            this.btnlogout.Location = new System.Drawing.Point(616, 0);
-            this.btnlogout.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnlogout.Name = "btnlogout";
-            this.btnlogout.Size = new System.Drawing.Size(68, 28);
-            this.btnlogout.TabIndex = 13;
-            this.btnlogout.Text = "Logout";
-            this.btnlogout.UseVisualStyleBackColor = false;
-            this.btnlogout.Click += new System.EventHandler(this.btnlogout_Click);
             // 
             // btnsettings
             // 
@@ -394,6 +395,7 @@
             this.label11.TabIndex = 1;
             this.label11.Text = "0";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // flowLayoutPanel5
             // 

@@ -26,15 +26,18 @@ namespace projectoop2
             _role = role;
         }
         private void Form2_Load(object sender, EventArgs e)
-        {  string currentDateTime = DateTime.Now.ToString("dd/MM/yyyy");
+        { string currentDateTime = DateTime.Now.ToString("dd/MM/yyyy");
             label1.Text = $"{_username} ({_role}) | {currentDateTime}";
             LoadTotalPrice();
-
-
-
-
-
+            LoadTotalrevenue();
         }
+            
+           
+
+
+
+
+        
         private void pn1TotalProducts_Paint(object sender, PaintEventArgs e)
         {
 
@@ -222,6 +225,51 @@ namespace projectoop2
         }
 
         private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void LoadTotalrevenue()
+        {
+
+
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+
+            string query = "SELECT SUM(Amount) FROM Sales";
+
+            try
+            {
+                {
+                    conn.Open();
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != DBNull.Value)
+                        {
+                            decimal total = Convert.ToDecimal(result);
+                            label11.Text = $"{total:C}";
+                        }
+                        else
+                        {
+                            label11.Text = "Total: $0.00";
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                label11.Text = "Error";
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void label11_Click(object sender, EventArgs e)
         {
 
         }
