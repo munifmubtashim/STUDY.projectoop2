@@ -129,7 +129,7 @@ private void label5_Click(object sender, EventArgs e)
 
 private void textusername_TextChanged(object sender, EventArgs e)
 {
-            textusername.Text = _username;
+            
         }
 
 private void label7_Click(object sender, EventArgs e)
@@ -165,12 +165,12 @@ private void panel3_Click(object sender, EventArgs e)
 
 }
 
-#pragma warning disable CS8321 // Local function is declared but never used
+#pragma warning disable CS8321 
 private void pictureeye_MouseUp(object sender, MouseEventArgs e)
 {
     textpassword.UseSystemPasswordChar = true;
 }
-#pragma warning restore CS8321 // Local function is declared but never used
+#pragma warning restore CS8321 
 
 private void pictureeye_MouseDown(object sender, MouseEventArgs e)
 {

@@ -109,9 +109,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(149, 112);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 16);
+            this.label3.Size = new System.Drawing.Size(96, 16);
             this.label3.TabIndex = 39;
-            this.label3.Text = "Product:";
+            this.label3.Text = "Product Name:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textBox1
@@ -127,9 +127,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(149, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 16);
+            this.label2.Size = new System.Drawing.Size(72, 16);
             this.label2.TabIndex = 37;
-            this.label2.Text = "Customer ID:";
+            this.label2.Text = "Product ID:";
             // 
             // textBox4
             // 

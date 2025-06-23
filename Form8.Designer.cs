@@ -54,6 +54,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panelsidebar.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -208,7 +210,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(605, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 15);
+            this.label1.Size = new System.Drawing.Size(134, 17);
             this.label1.TabIndex = 28;
             this.label1.Text = "lblUser(role)datetime";
             // 
@@ -228,7 +230,7 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(12, 7);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(211, 20);
+            this.label4.Size = new System.Drawing.Size(228, 21);
             this.label4.TabIndex = 26;
             this.label4.Text = "StoreTrack Inventory System";
             // 
@@ -254,7 +256,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 24);
             this.button1.TabIndex = 49;
-            this.button1.Text = "Add ";
+            this.button1.Text = "Add Details";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox6
@@ -342,11 +344,33 @@
             this.label2.TabIndex = 37;
             this.label2.Text = "Supplier ID:";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(265, 314);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(161, 24);
+            this.button3.TabIndex = 55;
+            this.button3.Text = "Delete Details";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(265, 276);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(161, 24);
+            this.button2.TabIndex = 54;
+            this.button2.Text = "Update Details";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(966, 505);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox6);
@@ -401,5 +425,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }
