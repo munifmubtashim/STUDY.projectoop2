@@ -87,9 +87,10 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(399, 214);
+            this.panel3.Location = new System.Drawing.Point(355, 171);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(370, 75);
+            this.panel3.Size = new System.Drawing.Size(329, 60);
             this.panel3.TabIndex = 16;
             // 
             // label7
@@ -97,11 +98,11 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 11);
+            this.label7.Location = new System.Drawing.Point(3, -1);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 60);
+            this.label7.Size = new System.Drawing.Size(49, 60);
             this.label7.TabIndex = 1;
-            this.label7.Text = "৳0";
+            this.label7.Text = "0";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
@@ -110,9 +111,10 @@
             this.flowLayoutPanel3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.flowLayoutPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel3.Controls.Add(this.label8);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(399, 186);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(355, 149);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(370, 50);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(329, 40);
             this.flowLayoutPanel3.TabIndex = 15;
             // 
             // label8
@@ -309,9 +311,10 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label9);
-            this.panel4.Location = new System.Drawing.Point(159, 81);
+            this.panel4.Location = new System.Drawing.Point(141, 65);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(202, 76);
+            this.panel4.Size = new System.Drawing.Size(180, 61);
             this.panel4.TabIndex = 18;
             // 
             // label9
@@ -319,21 +322,23 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(60, 12);
+            this.label9.Location = new System.Drawing.Point(3, -1);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 60);
+            this.label9.Size = new System.Drawing.Size(100, 60);
             this.label9.TabIndex = 1;
-            this.label9.Text = "0";
+            this.label9.Text = "100";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // flowLayoutPanel4
             // 
             this.flowLayoutPanel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.flowLayoutPanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel4.Controls.Add(this.label10);
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(159, 53);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(141, 42);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(202, 37);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(180, 30);
             this.flowLayoutPanel4.TabIndex = 17;
             // 
             // label10
@@ -353,21 +358,23 @@
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.label11);
-            this.panel6.Location = new System.Drawing.Point(399, 85);
+            this.panel6.Location = new System.Drawing.Point(355, 68);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(370, 76);
+            this.panel6.Size = new System.Drawing.Size(329, 61);
             this.panel6.TabIndex = 20;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(18, 11);
+            this.label11.Location = new System.Drawing.Point(-3, -1);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(86, 60);
+            this.label11.Size = new System.Drawing.Size(50, 60);
             this.label11.TabIndex = 1;
-            this.label11.Text = "৳0";
+            this.label11.Text = "0";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // flowLayoutPanel5
@@ -375,9 +382,10 @@
             this.flowLayoutPanel5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.flowLayoutPanel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel5.Controls.Add(this.label12);
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(399, 52);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(355, 42);
+            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(370, 42);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(329, 34);
             this.flowLayoutPanel5.TabIndex = 19;
             // 
             // label12
@@ -397,9 +405,10 @@
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.label13);
-            this.panel7.Location = new System.Drawing.Point(399, 347);
+            this.panel7.Location = new System.Drawing.Point(355, 278);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(370, 76);
+            this.panel7.Size = new System.Drawing.Size(329, 61);
             this.panel7.TabIndex = 22;
             // 
             // label13
@@ -407,11 +416,11 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(20, 11);
+            this.label13.Location = new System.Drawing.Point(3, -1);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(86, 60);
+            this.label13.Size = new System.Drawing.Size(50, 60);
             this.label13.TabIndex = 1;
-            this.label13.Text = "৳0";
+            this.label13.Text = "0";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // flowLayoutPanel6
@@ -419,9 +428,10 @@
             this.flowLayoutPanel6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.flowLayoutPanel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel6.Controls.Add(this.label14);
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(399, 319);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(355, 255);
+            this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(370, 37);
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(329, 30);
             this.flowLayoutPanel6.TabIndex = 21;
             // 
             // label14
@@ -442,9 +452,10 @@
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label15);
-            this.panel8.Location = new System.Drawing.Point(159, 347);
+            this.panel8.Location = new System.Drawing.Point(141, 278);
+            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(202, 76);
+            this.panel8.Size = new System.Drawing.Size(180, 61);
             this.panel8.TabIndex = 24;
             // 
             // label15
@@ -452,11 +463,11 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(60, 12);
+            this.label15.Location = new System.Drawing.Point(3, -1);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(50, 60);
+            this.label15.Size = new System.Drawing.Size(125, 60);
             this.label15.TabIndex = 1;
-            this.label15.Text = "0";
+            this.label15.Text = "1000";
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // flowLayoutPanel7
@@ -464,9 +475,10 @@
             this.flowLayoutPanel7.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.flowLayoutPanel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel7.Controls.Add(this.label16);
-            this.flowLayoutPanel7.Location = new System.Drawing.Point(159, 319);
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(141, 255);
+            this.flowLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
-            this.flowLayoutPanel7.Size = new System.Drawing.Size(202, 37);
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(180, 30);
             this.flowLayoutPanel7.TabIndex = 23;
             // 
             // label16
@@ -486,9 +498,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(159, 215);
+            this.panel1.Location = new System.Drawing.Point(141, 172);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(202, 76);
+            this.panel1.Size = new System.Drawing.Size(180, 61);
             this.panel1.TabIndex = 26;
             // 
             // label2
@@ -496,11 +509,11 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(60, 12);
+            this.label2.Location = new System.Drawing.Point(3, -2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 60);
+            this.label2.Size = new System.Drawing.Size(100, 60);
             this.label2.TabIndex = 1;
-            this.label2.Text = "0";
+            this.label2.Text = "200";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // flowLayoutPanel1
@@ -508,9 +521,10 @@
             this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Controls.Add(this.label3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(159, 187);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(141, 150);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(202, 37);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(180, 30);
             this.flowLayoutPanel1.TabIndex = 25;
             // 
             // label3
@@ -530,7 +544,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(711, 360);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel8);

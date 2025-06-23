@@ -215,5 +215,15 @@ namespace projectoop2
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
