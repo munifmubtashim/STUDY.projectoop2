@@ -118,5 +118,10 @@ namespace projectoop2
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Please contact us at:\n\nstoretrack@gmail.com", "Contact Us", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
