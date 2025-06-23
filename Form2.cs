@@ -32,7 +32,8 @@ namespace projectoop2
             label1.Text = $"{_username} ({_role}) | {currentDateTime}";
             LoadTotalPrice();
             LoadTotalrevenue();
-            LoadTotalsupplers();
+            LoadTotalsuppliers();
+            LoadTotalcustomers();
         }
 
 
@@ -286,7 +287,7 @@ namespace projectoop2
         {
 
         }
-        private void LoadTotalsupplers()
+        private void LoadTotalsuppliers()
         {
             string connectionString = "Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
 
@@ -299,7 +300,7 @@ namespace projectoop2
                     SqlCommand cmd = new SqlCommand(query, conn);
 
                     int total = (int)cmd.ExecuteScalar();
-                    label15.Text =   total.ToString();
+                    label15.Text = total.ToString();
                 }
                 catch (Exception ex)
                 {
@@ -308,6 +309,61 @@ namespace projectoop2
             }
 
         }
+        private void LoadTotalcustomers()
+        {
+            string connectionString = "Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT COUNT(No) FROM Customer";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+
+                    int total = (int)cmd.ExecuteScalar();
+                    label9.Text =   total.ToString();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+
+        }
+
+        private void label2_Click_3(object sender, EventArgs e)
+        {
+
+        }
+        private void LoadTotalstock()
+        {
+
+
+            string connectionString = "Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMS;User ID=your_sql_username;Password=your_password";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT SUM(Quantity) FROM Sales";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+
+                    object result = cmd.ExecuteScalar();
+                    int totalStock = result != DBNull.Value ? Convert.ToInt32(result) : 0;
+
+                    label2.Text = totalStock.ToString();
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+        }
+
     }
 
 
