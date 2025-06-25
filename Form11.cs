@@ -98,10 +98,8 @@ namespace projectoop2
                 lblerror.Visible = true;
             }
         }
-
         private void chgpass_Load(object sender, EventArgs e)
         {
-
         }
 
         private void lblerror_Click(object sender, EventArgs e)
