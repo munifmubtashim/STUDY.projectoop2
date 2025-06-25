@@ -215,9 +215,10 @@
             // 
             // pbrefresh
             // 
+            this.pbrefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbrefresh.BackColor = System.Drawing.Color.Transparent;
             this.pbrefresh.Image = global::projectoop2.Properties.Resources.icons8_refresh_30;
-            this.pbrefresh.Location = new System.Drawing.Point(857, 48);
+            this.pbrefresh.Location = new System.Drawing.Point(879, 38);
             this.pbrefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbrefresh.Name = "pbrefresh";
             this.pbrefresh.Size = new System.Drawing.Size(30, 30);
@@ -388,10 +389,11 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(679, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 15);
+            this.label1.Size = new System.Drawing.Size(140, 17);
             this.label1.TabIndex = 28;
             this.label1.Text = "lblUser(role)datetime";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
