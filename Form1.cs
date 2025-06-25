@@ -77,29 +77,33 @@ namespace projectoop2
 
         private void buttonlogin_Click(object sender, EventArgs e)
         {
-            
+
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
             conn.Open();
-            string query = "SELECT COUNT(*) FROM Signup WHERE Username=@Username AND Password=@Password";
-            SqlCommand cmd = new SqlCommand(query,conn);
+
+            string query = "SELECT Username FROM Signup WHERE Username=@Username AND Password=@Password";
+            SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@Username", textusername.Text);
             cmd.Parameters.AddWithValue("@Password", textpassword.Text);
-            int count = (int)cmd.ExecuteScalar();
-            conn.Close();
-            if (count > 0)
-            {
-                MessageBox.Show("Login Successfull!!");
 
-                Form2 Form2 = new Form2(_username);
-                Form2.Show();
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            if (reader.Read())
+            {
+                string username = reader["Username"].ToString(); // Get the username from DB
+
+                MessageBox.Show("Login Successful!!");
+
+                Form2 form2 = new Form2(username); // Pass username to Form2
+                form2.Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Login Failed!,Try again.");
-
+                MessageBox.Show("Login Failed! Try again.");
             }
 
+            conn.Close();
         }
 
 
