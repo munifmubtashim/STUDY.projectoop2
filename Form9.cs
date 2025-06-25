@@ -118,7 +118,7 @@ namespace projectoop2
             MessageBox.Show(e.RowIndex.ToString());
             textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
             textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            textBox3.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+         
             textBox4.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
         }
 
@@ -135,6 +135,7 @@ namespace projectoop2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            DateTime date = DateTime.Now;
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
             string query = "INSERT INTO Purchese ([ID], [Supplier],[Date], [Product],[Price]) VALUES (@ID, @Supplier, @Date, @Product,@Price)";
 
@@ -142,9 +143,9 @@ namespace projectoop2
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@ID", textBox1.Text);
             cmd.Parameters.AddWithValue("@Supplier", textBox2.Text);
-            cmd.Parameters.AddWithValue("@Date", textBox3.Text);
+            cmd.Parameters.AddWithValue("@Date", date);
             cmd.Parameters.AddWithValue("@Product", textBox4.Text);
-            cmd.Parameters.AddWithValue("@Price", textBox5.Text);
+            cmd.Parameters.AddWithValue("@Price", decimal.Parse(textBox5.Text));
 
 
 
@@ -156,7 +157,7 @@ namespace projectoop2
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
             conn.Open();
-            string query = "UPDATE Purchese SET Supplier='" + textBox2.Text + "',Date='" + textBox3.Text + "',Product='" + textBox4.Text + "',Price='" + textBox5.Text + "' where ID=" + textBox1.Text;
+            string query = "UPDATE Purchese SET Supplier='" + textBox2.Text  + "',Product='" + textBox4.Text + "',Price='" + textBox5.Text + "' where ID=" + textBox1.Text;
 
 
 
