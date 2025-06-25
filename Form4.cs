@@ -17,7 +17,7 @@ namespace projectoop2
 {
     public partial class Signup: Form
     {
-        private string _username;
+        public string _username;
         
 
 

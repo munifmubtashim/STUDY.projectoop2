@@ -16,7 +16,7 @@ namespace projectoop2
 {
     public partial class Form2 : Form
     {
-        private string _username;
+        public string _username;
         
 
 

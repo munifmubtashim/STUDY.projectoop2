@@ -12,7 +12,7 @@ namespace projectoop2
 {
     public partial class wlc: Form
     {
-        private string _username;
+        public string _username;
         
         public wlc(string username)
         {

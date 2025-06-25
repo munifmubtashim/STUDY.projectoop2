@@ -13,7 +13,7 @@ namespace projectoop2
 {
     public partial class Form8: Form
     {
-        private string _username;
+        public string _username;
         
         public Form8(string username)
         {
