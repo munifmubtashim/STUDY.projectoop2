@@ -152,7 +152,7 @@ namespace projectoop2
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
-            string query = "INSERT INTO Customer ([ID], [Name],[Contact_Name], [Number]) VALUES (@ID, @Name, @Contact_Name, @Number)";
+            string query = "INSERT INTO SUpplier ([ID], [Name],[Contact_Name], [Number]) VALUES (@ID, @Name, @Contact_Name, @Number)";
 
             conn.Open();
             SqlCommand cmd = new SqlCommand(query, conn);
