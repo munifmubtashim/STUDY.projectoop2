@@ -34,6 +34,7 @@ namespace projectoop2
             LoadTotalrevenue();
             LoadTotalsuppliers();
             LoadTotalcustomers();
+            LoadTotalPurchese();
         }
 
 
@@ -233,6 +234,7 @@ namespace projectoop2
 
         }
 
+
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
@@ -364,6 +366,45 @@ namespace projectoop2
             }
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void LoadTotalPurchese()
+        {
+
+
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+
+            string query = "SELECT SUM(Price) FROM Purchese";
+
+            try
+            {
+                {
+                    conn.Open();
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != DBNull.Value)
+                        {
+                            decimal total = Convert.ToDecimal(result);
+                            label13.Text = $"{total:C}";
+                        }
+                        else
+                        {
+                            label13.Text = "Total: $0.00";
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                label7.Text = "Error";
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
     }
 
 
