@@ -18,7 +18,6 @@ namespace projectoop2
     public partial class Form1 : Form
     {
         private string _username;
-        private string _role;
        
         public Form1(string username, string role)
         {

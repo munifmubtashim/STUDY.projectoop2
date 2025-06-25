@@ -10,7 +10,6 @@ namespace projectoop2
     class Program
     {
         private static string _username;
-        private static string _role;
 
         static void Main(string[] args)
         { 
