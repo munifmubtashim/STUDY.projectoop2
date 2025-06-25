@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Windows.Forms.DataVisualization.Charting;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Net.NetworkInformation;
 
 namespace projectoop2
 {
@@ -341,29 +342,34 @@ namespace projectoop2
         private void LoadTotalstock()
         {
 
-
-            string connectionString = "Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMS;User ID=your_sql_username;Password=your_password";
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            tring connectionString = "Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
+            string query = "SELECT SUM(Quantity) FROM Sales"; // Adjust "Stock" to your actual column name
+            try
             {
-                try
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-                    string query = "SELECT SUM(Quantity) FROM Sales";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-
-                    object result = cmd.ExecuteScalar();
-                    int totalStock = result != DBNull.Value ? Convert.ToInt32(result) : 0;
-
-                    label2.Text = totalStock.ToString();
-
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        object result = cmd.ExecuteScalar();
+                        if (result != DBNull.Value)
+                        {
+                            int totalStock = Convert.ToInt32(result);
+                            label2.Text = $"Total Stock: {totalStock}";
+                        }
+                        else
+                        {
+                            label2.Text = "Total Stock: 0";
+                        }
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                label2.Text = "Error loading stock.";
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

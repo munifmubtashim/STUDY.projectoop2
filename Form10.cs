@@ -190,6 +190,14 @@ namespace projectoop2
         {
             MessageBox.Show("Not available , Right Now!!!", "Contact Us", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            chgpass changeForm = new chgpass();
+            changeForm.ShowDialog();
+            
+        }
+    
     }
     
     
