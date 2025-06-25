@@ -57,9 +57,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.pbrefresh = new System.Windows.Forms.PictureBox();
             this.panelsidebar.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbrefresh)).BeginInit();
             this.SuspendLayout();
             // 
             // panelsidebar
@@ -268,8 +270,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(162, 25);
             this.button2.TabIndex = 50;
-            this.button2.Text = "Remove Item";
+            this.button2.Text = "Update Item";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -280,6 +283,7 @@
             this.button1.TabIndex = 49;
             this.button1.Text = "Add Item";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox6
             // 
@@ -383,11 +387,25 @@
             this.label7.TabIndex = 54;
             this.label7.Text = "Price:";
             // 
+            // pbrefresh
+            // 
+            this.pbrefresh.BackColor = System.Drawing.Color.Transparent;
+            this.pbrefresh.Image = global::projectoop2.Properties.Resources.icons8_refresh_30;
+            this.pbrefresh.Location = new System.Drawing.Point(428, 409);
+            this.pbrefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbrefresh.Name = "pbrefresh";
+            this.pbrefresh.Size = new System.Drawing.Size(30, 30);
+            this.pbrefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbrefresh.TabIndex = 58;
+            this.pbrefresh.TabStop = false;
+            this.pbrefresh.Click += new System.EventHandler(this.pbrefresh_Click);
+            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(909, 450);
+            this.Controls.Add(this.pbrefresh);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridView1);
@@ -414,6 +432,7 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbrefresh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -449,5 +468,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pbrefresh;
     }
 }

@@ -55,9 +55,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pbrefresh = new System.Windows.Forms.PictureBox();
             this.panelsidebar.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbrefresh)).BeginInit();
             this.SuspendLayout();
             // 
             // panelsidebar
@@ -366,11 +368,25 @@
             this.label2.TabIndex = 37;
             this.label2.Text = "Customer No:";
             // 
+            // pbrefresh
+            // 
+            this.pbrefresh.BackColor = System.Drawing.Color.Transparent;
+            this.pbrefresh.Image = global::projectoop2.Properties.Resources.icons8_refresh_30;
+            this.pbrefresh.Location = new System.Drawing.Point(520, 417);
+            this.pbrefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbrefresh.Name = "pbrefresh";
+            this.pbrefresh.Size = new System.Drawing.Size(30, 30);
+            this.pbrefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbrefresh.TabIndex = 58;
+            this.pbrefresh.TabStop = false;
+            this.pbrefresh.Click += new System.EventHandler(this.pbrefresh_Click);
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(909, 450);
+            this.Controls.Add(this.pbrefresh);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -395,6 +411,7 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbrefresh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -428,5 +445,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pbrefresh;
     }
 }
