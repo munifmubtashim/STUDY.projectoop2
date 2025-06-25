@@ -204,7 +204,8 @@
             // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.AliceBlue;
             this.panel5.BackgroundImage = global::projectoop2.Properties.Resources.What_lies_Beyond;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -217,6 +218,7 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(914, 34);
             this.panel5.TabIndex = 22;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // label1
             // 
@@ -365,7 +367,7 @@
             this.pbrefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbrefresh.BackColor = System.Drawing.Color.Transparent;
             this.pbrefresh.Image = global::projectoop2.Properties.Resources.icons8_refresh_30;
-            this.pbrefresh.Location = new System.Drawing.Point(879, 33);
+            this.pbrefresh.Location = new System.Drawing.Point(864, 60);
             this.pbrefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbrefresh.Name = "pbrefresh";
             this.pbrefresh.Size = new System.Drawing.Size(30, 30);

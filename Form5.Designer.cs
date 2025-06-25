@@ -218,7 +218,7 @@
             this.pbrefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbrefresh.BackColor = System.Drawing.Color.Transparent;
             this.pbrefresh.Image = global::projectoop2.Properties.Resources.icons8_refresh_30;
-            this.pbrefresh.Location = new System.Drawing.Point(879, 38);
+            this.pbrefresh.Location = new System.Drawing.Point(867, 55);
             this.pbrefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbrefresh.Name = "pbrefresh";
             this.pbrefresh.Size = new System.Drawing.Size(30, 30);
