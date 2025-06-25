@@ -150,7 +150,7 @@ namespace projectoop2
 
 
             cmd.ExecuteNonQuery();
-            MessageBox.Show("Customers details added Successfully!");
+            MessageBox.Show("Purchese details added Successfully!");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -167,6 +167,21 @@ namespace projectoop2
 
             cmd.ExecuteNonQuery();
             MessageBox.Show("Updated Successfully!");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string connectionString = @"Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+            string q = "select * from Purchese where Name LIKE '" + textBox6.Text + "%'";
+            SqlCommand cmd = new SqlCommand(q, conn);
+            SqlDataAdapter adp = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            adp.Fill(ds);
+            DataTable dt = ds.Tables[0];
+            dataGridView1.AutoGenerateColumns = true;
+            dataGridView1.DataSource = dt;
         }
     }
 }

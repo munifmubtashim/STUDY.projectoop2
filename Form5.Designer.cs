@@ -39,7 +39,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -60,6 +59,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbluser = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbrefresh)).BeginInit();
             this.panelsidebar.SuspendLayout();
@@ -152,18 +152,9 @@
             this.textBox5.Size = new System.Drawing.Size(161, 22);
             this.textBox5.TabIndex = 29;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(467, 50);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(102, 16);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "Search Product:";
-            // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(581, 48);
+            this.textBox6.Location = new System.Drawing.Point(484, 39);
             this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(192, 22);
@@ -416,19 +407,34 @@
             this.label4.TabIndex = 26;
             this.label4.Text = "StoreTrack Inventory System";
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(682, 36);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 27);
+            this.button4.TabIndex = 38;
+            this.button4.Text = "Search";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(909, 450);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.pbrefresh);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox4);
@@ -481,7 +487,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -489,5 +494,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.PictureBox pbrefresh;
+        private System.Windows.Forms.Button button4;
     }
 }

@@ -190,5 +190,25 @@ namespace projectoop2
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string connectionString = @"Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+            string q = "select * from Sales where Name LIKE '" + textBox6.Text + "%'";
+            SqlCommand cmd = new SqlCommand(q, conn);
+            SqlDataAdapter adp = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            adp.Fill(ds);
+            DataTable dt = ds.Tables[0];
+            dataGridView1.AutoGenerateColumns = true;
+            dataGridView1.DataSource = dt;
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }   
 }
