@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblerror = new System.Windows.Forms.Label();
             this.lbllogin = new System.Windows.Forms.Label();
             this.cboxacctype = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblerror = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.piceye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -96,6 +96,18 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // lblerror
+            // 
+            this.lblerror.AutoSize = true;
+            this.lblerror.BackColor = System.Drawing.Color.Transparent;
+            this.lblerror.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblerror.Location = new System.Drawing.Point(183, 236);
+            this.lblerror.Name = "lblerror";
+            this.lblerror.Size = new System.Drawing.Size(107, 12);
+            this.lblerror.TabIndex = 45;
+            this.lblerror.Text = "Password doesn\'t match!!";
+            this.lblerror.Click += new System.EventHandler(this.lblerror_Click);
+            // 
             // lbllogin
             // 
             this.lbllogin.AutoSize = true;
@@ -105,7 +117,7 @@
             this.lbllogin.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.lbllogin.Name = "lbllogin";
             this.lbllogin.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.lbllogin.Size = new System.Drawing.Size(34, 17);
+            this.lbllogin.Size = new System.Drawing.Size(28, 17);
             this.lbllogin.TabIndex = 44;
             this.lbllogin.Text = "Log In";
             this.lbllogin.Click += new System.EventHandler(this.lbllogin_Click_1);
@@ -121,7 +133,7 @@
             "Customer"});
             this.cboxacctype.Location = new System.Drawing.Point(39, 343);
             this.cboxacctype.Name = "cboxacctype";
-            this.cboxacctype.Size = new System.Drawing.Size(121, 20);
+            this.cboxacctype.Size = new System.Drawing.Size(121, 19);
             this.cboxacctype.TabIndex = 43;
             this.cboxacctype.Text = "Admin";
             // 
@@ -133,7 +145,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(36, 323);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 20);
+            this.label11.Size = new System.Drawing.Size(85, 15);
             this.label11.TabIndex = 42;
             this.label11.Text = "Account Type:";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -146,7 +158,7 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(33, 416);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(103, 20);
+            this.label10.Size = new System.Drawing.Size(82, 15);
             this.label10.TabIndex = 40;
             this.label10.Text = "Date of birth:";
             // 
@@ -157,7 +169,7 @@
             this.dtb.CalendarFont = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtb.Location = new System.Drawing.Point(128, 410);
             this.dtb.Name = "dtb";
-            this.dtb.Size = new System.Drawing.Size(198, 21);
+            this.dtb.Size = new System.Drawing.Size(198, 19);
             this.dtb.TabIndex = 39;
             // 
             // rbfemale
@@ -168,7 +180,7 @@
             this.rbfemale.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbfemale.Location = new System.Drawing.Point(251, 353);
             this.rbfemale.Name = "rbfemale";
-            this.rbfemale.Size = new System.Drawing.Size(84, 24);
+            this.rbfemale.Size = new System.Drawing.Size(68, 19);
             this.rbfemale.TabIndex = 38;
             this.rbfemale.TabStop = true;
             this.rbfemale.Text = "Female";
@@ -183,7 +195,7 @@
             this.lblgender.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblgender.Location = new System.Drawing.Point(180, 323);
             this.lblgender.Name = "lblgender";
-            this.lblgender.Size = new System.Drawing.Size(65, 20);
+            this.lblgender.Size = new System.Drawing.Size(52, 15);
             this.lblgender.TabIndex = 37;
             this.lblgender.Text = "Gender:";
             this.lblgender.Click += new System.EventHandler(this.label9_Click);
@@ -196,7 +208,7 @@
             this.rbmale.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbmale.Location = new System.Drawing.Point(251, 323);
             this.rbmale.Name = "rbmale";
-            this.rbmale.Size = new System.Drawing.Size(68, 24);
+            this.rbmale.Size = new System.Drawing.Size(55, 19);
             this.rbmale.TabIndex = 36;
             this.rbmale.TabStop = true;
             this.rbmale.Text = "Male";
@@ -211,9 +223,10 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(36, 255);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 20);
+            this.label8.Size = new System.Drawing.Size(67, 15);
             this.label8.TabIndex = 35;
             this.label8.Text = "Username:";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -223,7 +236,7 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(36, 137);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 20);
+            this.label7.Size = new System.Drawing.Size(39, 15);
             this.label7.TabIndex = 34;
             this.label7.Text = "Email:";
             // 
@@ -235,9 +248,10 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(36, 194);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 20);
+            this.label6.Size = new System.Drawing.Size(62, 15);
             this.label6.TabIndex = 33;
             this.label6.Text = "Password:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -247,9 +261,10 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(177, 194);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 20);
+            this.label5.Size = new System.Drawing.Size(110, 15);
             this.label5.TabIndex = 32;
             this.label5.Text = "Confirm Password:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtconpass
             // 
@@ -261,7 +276,7 @@
             this.txtconpass.ForeColor = System.Drawing.Color.Black;
             this.txtconpass.Location = new System.Drawing.Point(180, 205);
             this.txtconpass.Name = "txtconpass";
-            this.txtconpass.Size = new System.Drawing.Size(129, 28);
+            this.txtconpass.Size = new System.Drawing.Size(129, 25);
             this.txtconpass.TabIndex = 30;
             this.txtconpass.UseSystemPasswordChar = true;
             this.txtconpass.TextChanged += new System.EventHandler(this.txtpass_TextChanged);
@@ -290,7 +305,7 @@
             this.txtpass.ForeColor = System.Drawing.Color.Black;
             this.txtpass.Location = new System.Drawing.Point(39, 205);
             this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(132, 28);
+            this.txtpass.Size = new System.Drawing.Size(132, 25);
             this.txtpass.TabIndex = 28;
             this.txtpass.UseSystemPasswordChar = true;
             this.txtpass.TextChanged += new System.EventHandler(this.txtpass_TextChanged);
@@ -305,7 +320,7 @@
             this.label2.ForeColor = System.Drawing.Color.Gray;
             this.label2.Location = new System.Drawing.Point(96, 517);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 17);
+            this.label2.Size = new System.Drawing.Size(137, 13);
             this.label2.TabIndex = 25;
             this.label2.Text = "Already have an account?";
             // 
@@ -335,7 +350,7 @@
             this.txtusername.ForeColor = System.Drawing.Color.Black;
             this.txtusername.Location = new System.Drawing.Point(39, 265);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(270, 28);
+            this.txtusername.Size = new System.Drawing.Size(270, 25);
             this.txtusername.TabIndex = 20;
             // 
             // txtemail
@@ -348,7 +363,7 @@
             this.txtemail.ForeColor = System.Drawing.Color.Black;
             this.txtemail.Location = new System.Drawing.Point(39, 147);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(270, 28);
+            this.txtemail.Size = new System.Drawing.Size(270, 25);
             this.txtemail.TabIndex = 19;
             this.txtemail.Text = " ";
             this.txtemail.TextChanged += new System.EventHandler(this.txtemail_TextChanged);
@@ -373,7 +388,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(48, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 28);
+            this.label4.Size = new System.Drawing.Size(96, 23);
             this.label4.TabIndex = 24;
             this.label4.Text = "StoreTrack";
             // 
@@ -389,17 +404,6 @@
             this.pictureBox4.TabIndex = 25;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // lblerror
-            // 
-            this.lblerror.AutoSize = true;
-            this.lblerror.BackColor = System.Drawing.Color.Transparent;
-            this.lblerror.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblerror.Location = new System.Drawing.Point(183, 236);
-            this.lblerror.Name = "lblerror";
-            this.lblerror.Size = new System.Drawing.Size(118, 12);
-            this.lblerror.TabIndex = 45;
-            this.lblerror.Text = "Password doesn\'t match!!";
             // 
             // Signup
             // 

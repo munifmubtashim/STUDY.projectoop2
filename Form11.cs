@@ -62,6 +62,42 @@ namespace projectoop2
                 conn.Close();
             }
         }
-    
+
+        private void piceye_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtNewPassword.UseSystemPasswordChar = true;
+            txtOldPassword.UseSystemPasswordChar = true;
+
+            txtConfirmPassword.UseSystemPasswordChar = true;
+        }
+
+        private void piceye_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtNewPassword.UseSystemPasswordChar = false;
+            txtOldPassword.UseSystemPasswordChar = false;
+            txtConfirmPassword.UseSystemPasswordChar = false;
+        }
+
+        private void txtOldPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNewPassword_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtNewPassword.Text) || string.IsNullOrEmpty(txtConfirmPassword.Text))
+            {
+                lblerror.Visible = false;
+            }
+            else if (txtNewPassword.Text == txtConfirmPassword.Text)
+            {
+                lblerror.Visible = false;
+            }
+            else
+            {
+                lblerror.Visible = true;
+            }
+        }
+    }
     }
 }

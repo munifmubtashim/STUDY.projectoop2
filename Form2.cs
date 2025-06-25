@@ -36,6 +36,7 @@ namespace projectoop2
             LoadTotalsuppliers();
             LoadTotalcustomers();
             LoadTotalPurchese();
+            LoadTotalstock();
         }
 
 
