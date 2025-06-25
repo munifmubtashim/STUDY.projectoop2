@@ -217,7 +217,7 @@
             // 
             this.pbrefresh.BackColor = System.Drawing.Color.Transparent;
             this.pbrefresh.Image = global::projectoop2.Properties.Resources.icons8_refresh_30;
-            this.pbrefresh.Location = new System.Drawing.Point(485, 404);
+            this.pbrefresh.Location = new System.Drawing.Point(857, 48);
             this.pbrefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbrefresh.Name = "pbrefresh";
             this.pbrefresh.Size = new System.Drawing.Size(30, 30);
@@ -239,7 +239,7 @@
             this.panelsidebar.Controls.Add(this.btnsales);
             this.panelsidebar.Controls.Add(this.btnproduct);
             this.panelsidebar.Controls.Add(this.Dashboardbutton);
-            this.panelsidebar.Location = new System.Drawing.Point(-1, 27);
+            this.panelsidebar.Location = new System.Drawing.Point(0, 36);
             this.panelsidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelsidebar.Name = "panelsidebar";
             this.panelsidebar.Size = new System.Drawing.Size(127, 428);
@@ -352,6 +352,7 @@
             // 
             // btnlogout
             // 
+            this.btnlogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnlogout.BackColor = System.Drawing.Color.SteelBlue;
             this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnlogout.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -384,6 +385,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
