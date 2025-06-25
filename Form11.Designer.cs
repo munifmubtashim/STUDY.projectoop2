@@ -101,6 +101,8 @@
             this.piceye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.piceye.TabIndex = 47;
             this.piceye.TabStop = false;
+            this.piceye.MouseDown += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseDown);
+            this.piceye.MouseUp += new System.Windows.Forms.MouseEventHandler(this.piceye_MouseUp);
             // 
             // txtNewPassword
             // 
@@ -115,6 +117,7 @@
             this.txtNewPassword.Size = new System.Drawing.Size(206, 25);
             this.txtNewPassword.TabIndex = 46;
             this.txtNewPassword.UseSystemPasswordChar = true;
+            this.txtNewPassword.TextChanged += new System.EventHandler(this.txtNewPassword_TextChanged);
             // 
             // label1
             // 
@@ -141,6 +144,7 @@
             this.txtOldPassword.Size = new System.Drawing.Size(206, 25);
             this.txtOldPassword.TabIndex = 53;
             this.txtOldPassword.UseSystemPasswordChar = true;
+            this.txtOldPassword.TextChanged += new System.EventHandler(this.txtOldPassword_TextChanged);
             // 
             // label2
             // 
@@ -166,7 +170,6 @@
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(206, 25);
             this.txtusername.TabIndex = 55;
-            this.txtusername.UseSystemPasswordChar = true;
             // 
             // button1
             // 
@@ -187,7 +190,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(341, 449);
-            this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtusername);
@@ -200,12 +202,11 @@
             this.Controls.Add(this.piceye);
             this.Controls.Add(this.txtNewPassword);
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.HelpButton = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "chgpass";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.Text = "Change Password";
             ((System.ComponentModel.ISupportInitialize)(this.piceye)).EndInit();
             this.ResumeLayout(false);

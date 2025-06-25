@@ -36,6 +36,7 @@ namespace projectoop2
             LoadTotalsuppliers();
             LoadTotalcustomers();
             LoadTotalPurchese();
+            LoadTotalstock();
         }
 
 
@@ -342,7 +343,7 @@ namespace projectoop2
         private void LoadTotalstock()
         {
 
-            tring connectionString = "Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
             string query = "SELECT SUM(Quantity) FROM Sales"; // Adjust "Stock" to your actual column name
             try
             {
@@ -369,7 +370,7 @@ namespace projectoop2
                 label2.Text = "Error loading stock.";
                 MessageBox.Show("Error: " + ex.Message);
             }
-        }
+        
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
