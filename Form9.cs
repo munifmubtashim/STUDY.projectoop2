@@ -174,7 +174,9 @@ namespace projectoop2
             string connectionString = @"Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
-            string q = "select * from Purchese where Name LIKE '" + textBox6.Text + "%'";
+            string q = "select * from Purchese where ID  LIKE '" + textBox6.Text + "%' " +
+                "OR Supplier LIKE '" + textBox6.Text + "%'" +
+                "OR Product LIKE '" + textBox6.Text + "%'";
             SqlCommand cmd = new SqlCommand(q, conn);
             SqlDataAdapter adp = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
