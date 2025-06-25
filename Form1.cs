@@ -78,7 +78,6 @@ namespace projectoop2
         private void buttonlogin_Click(object sender, EventArgs e)
         {
             
-            
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
             conn.Open();
             string query = "SELECT COUNT(*) FROM Signup WHERE Username=@Username AND Password=@Password";
