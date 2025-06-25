@@ -49,9 +49,10 @@
             this.lblerror.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblerror.Location = new System.Drawing.Point(50, 310);
             this.lblerror.Name = "lblerror";
-            this.lblerror.Size = new System.Drawing.Size(165, 17);
+            this.lblerror.Size = new System.Drawing.Size(189, 20);
             this.lblerror.TabIndex = 52;
             this.lblerror.Text = "Password doesn\'t match!!";
+            this.lblerror.Click += new System.EventHandler(this.lblerror_Click);
             // 
             // label6
             // 
@@ -61,7 +62,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(44, 195);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 17);
+            this.label6.Size = new System.Drawing.Size(116, 20);
             this.label6.TabIndex = 50;
             this.label6.Text = "New Password:";
             // 
@@ -73,7 +74,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(47, 268);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 17);
+            this.label5.Size = new System.Drawing.Size(141, 20);
             this.label5.TabIndex = 49;
             this.label5.Text = "Confirm Password:";
             // 
@@ -87,7 +88,7 @@
             this.txtConfirmPassword.ForeColor = System.Drawing.Color.Black;
             this.txtConfirmPassword.Location = new System.Drawing.Point(47, 279);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
-            this.txtConfirmPassword.Size = new System.Drawing.Size(206, 25);
+            this.txtConfirmPassword.Size = new System.Drawing.Size(206, 26);
             this.txtConfirmPassword.TabIndex = 48;
             this.txtConfirmPassword.UseSystemPasswordChar = true;
             // 
@@ -114,7 +115,7 @@
             this.txtNewPassword.ForeColor = System.Drawing.Color.Black;
             this.txtNewPassword.Location = new System.Drawing.Point(47, 206);
             this.txtNewPassword.Name = "txtNewPassword";
-            this.txtNewPassword.Size = new System.Drawing.Size(206, 25);
+            this.txtNewPassword.Size = new System.Drawing.Size(206, 26);
             this.txtNewPassword.TabIndex = 46;
             this.txtNewPassword.UseSystemPasswordChar = true;
             this.txtNewPassword.TextChanged += new System.EventHandler(this.txtNewPassword_TextChanged);
@@ -127,7 +128,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(44, 116);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 17);
+            this.label1.Size = new System.Drawing.Size(108, 20);
             this.label1.TabIndex = 54;
             this.label1.Text = "Old Password:";
             // 
@@ -141,7 +142,7 @@
             this.txtOldPassword.ForeColor = System.Drawing.Color.Black;
             this.txtOldPassword.Location = new System.Drawing.Point(47, 127);
             this.txtOldPassword.Name = "txtOldPassword";
-            this.txtOldPassword.Size = new System.Drawing.Size(206, 25);
+            this.txtOldPassword.Size = new System.Drawing.Size(206, 26);
             this.txtOldPassword.TabIndex = 53;
             this.txtOldPassword.UseSystemPasswordChar = true;
             this.txtOldPassword.TextChanged += new System.EventHandler(this.txtOldPassword_TextChanged);
@@ -154,7 +155,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(47, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 17);
+            this.label2.Size = new System.Drawing.Size(84, 20);
             this.label2.TabIndex = 56;
             this.label2.Text = "Username:";
             // 
@@ -168,7 +169,7 @@
             this.txtusername.ForeColor = System.Drawing.Color.Black;
             this.txtusername.Location = new System.Drawing.Point(47, 64);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(206, 25);
+            this.txtusername.Size = new System.Drawing.Size(206, 26);
             this.txtusername.TabIndex = 55;
             // 
             // button1
@@ -186,7 +187,7 @@
             // 
             // chgpass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(341, 449);
@@ -208,6 +209,7 @@
             this.MinimizeBox = false;
             this.Name = "chgpass";
             this.Text = "Change Password";
+            this.Load += new System.EventHandler(this.chgpass_Load);
             ((System.ComponentModel.ISupportInitialize)(this.piceye)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

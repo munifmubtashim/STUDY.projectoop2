@@ -129,13 +129,13 @@ namespace projectoop2
         private void button2_Click(object sender, EventArgs e)
         {
             string connectionString = "Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
-            string outputDirectory = @"C:\Backups\";
+            string outputDirectory = @"D:\Backups\";
 
             // Table 1
-            BackupTable(connectionString, "SELECT * FROM Customers", Path.Combine(outputDirectory, "Customers_Backup.csv"));
+            BackupTable(connectionString, "SELECT * FROM Customer", Path.Combine(outputDirectory, "Customers_Backup.csv"));
 
             // Table 2
-            BackupTable(connectionString, "SELECT * FROM Sales", Path.Combine(outputDirectory, "Orders_Backup.csv"));
+            BackupTable(connectionString, "SELECT * FROM Sales", Path.Combine(outputDirectory, "Sales_Backup.csv"));
 
             // Table 3
             BackupTable(connectionString, "SELECT * FROM Product", Path.Combine(outputDirectory, "Products_Backup.csv"));
@@ -143,6 +143,8 @@ namespace projectoop2
             BackupTable(connectionString, "SELECT * FROM Supplier", Path.Combine(outputDirectory, "Suppliers_Backup.csv"));
 
             Console.WriteLine("✅ All hardcoded table backups completed.");
+                MessageBox.Show("Backup Successfull", "Backup", MessageBoxButtons.OK);
+            
         }
 
         static void BackupTable(string connectionString, string query, string outputPath)

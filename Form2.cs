@@ -344,7 +344,7 @@ namespace projectoop2
         {
 
             string connectionString = "Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
-            string query = "SELECT SUM(Quantity) FROM Sales"; // Adjust "Stock" to your actual column name
+            string query = "SELECT SUM(CAST(Quantity AS INT)) FROM Sales"; // Adjust "Stock" to your actual column name
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -356,7 +356,7 @@ namespace projectoop2
                         if (result != DBNull.Value)
                         {
                             int totalStock = Convert.ToInt32(result);
-                            label2.Text = $"Total Stock: {totalStock}";
+                            label2.Text = $"{totalStock}";
                         }
                         else
                         {

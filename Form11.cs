@@ -29,7 +29,7 @@ namespace projectoop2
                 MessageBox.Show("New passwords do not match.");
                 return;
             }
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMS;User ID=your_sql_username;Password=your_password");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
             try
             {
                 conn.Open();
@@ -98,6 +98,16 @@ namespace projectoop2
                 lblerror.Visible = true;
             }
         }
+
+        private void chgpass_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblerror_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
-}
+
