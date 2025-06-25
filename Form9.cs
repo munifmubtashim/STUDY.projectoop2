@@ -15,18 +15,18 @@ namespace projectoop2
     {
 
         private string _username;
-        private string _role;
-        public Form9(string username, string role)
+        
+        public Form9(string username)
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.Form9_Load);
             _username = username;
-            _role = role;
+            
         }
         private void Form9_Load(object sender, EventArgs e)
         {
             string currentDateTime = DateTime.Now.ToString("dd/MM/yyyy");
-            label1.Text = $"{_username} ({_role}) | {currentDateTime}";
+            label1.Text = $"{_username}  | {currentDateTime}";
 
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
             string query = "SELECT * FROM Purchese";
@@ -43,21 +43,21 @@ namespace projectoop2
 
         private void Dashboardbutton_Click_1(object sender, EventArgs e)
         {
-            Form2 Form2 = new Form2(_username, _role);
+            Form2 Form2 = new Form2(_username);
             Form2.Show();
             this.Hide();
         }
 
         private void btnproduct_Click_1(object sender, EventArgs e)
         {
-            Form5 products = new Form5(_username, _role);
+            Form5 products = new Form5(_username);
             products.Show();
             this.Hide();
         }
 
         private void btnsales_Click_1(object sender, EventArgs e)
         {
-            Form6 sales = new Form6(_username, _role);
+            Form6 sales = new Form6(_username);
             sales.Show();
             this.Hide();
 
@@ -65,14 +65,14 @@ namespace projectoop2
 
         private void btncustomers_Click_1(object sender, EventArgs e)
         {
-            Form7 customers = new Form7(_username, _role);
+            Form7 customers = new Form7(_username);
             customers.Show();
             this.Hide();
         }
 
         private void btnsuppliers_Click_1(object sender, EventArgs e)
         {
-            Form8 suppliers = new Form8(_username, _role);
+            Form8 suppliers = new Form8(_username);
             suppliers.Show();
             this.Hide();
         }
@@ -86,7 +86,7 @@ namespace projectoop2
 
         private void btnsettings_Click_1(object sender, EventArgs e)
         {
-            Form10 settings = new Form10(_username, _role);
+            Form10 settings = new Form10(_username);
             settings.Show();
             this.Hide();
         }
@@ -103,7 +103,7 @@ namespace projectoop2
             {
 
                 this.Hide();
-                Form1 loginForm = new Form1(_username, _role);
+                Form1 loginForm = new Form1(_username);
                 loginForm.Show();
             }
             else if (result == DialogResult.No)

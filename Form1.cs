@@ -18,13 +18,14 @@ namespace projectoop2
     public partial class Form1 : Form
     {
         private string _username;
+        
        
-        public Form1(string username, string role)
+        public Form1(string username)
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.Login_Load);
             _username = username;
-            _role = role;
+            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -59,7 +60,7 @@ namespace projectoop2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Signup Form4 = new Signup(_username,_role);
+            Signup Form4 = new Signup(_username);
             Form4.Show();
             this.Hide();
         }
@@ -90,7 +91,7 @@ namespace projectoop2
             {
                 MessageBox.Show("Login Successfull!!");
 
-                Form2 Form2 = new Form2(_username, _role);
+                Form2 Form2 = new Form2(_username);
                 Form2.Show();
                 this.Hide();
             }

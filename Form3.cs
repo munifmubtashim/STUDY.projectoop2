@@ -22,6 +22,11 @@ namespace projectoop2
             _role = role;
         }
 
+        public wlc(string username)
+        {
+            _username = username;
+        }
+
         private void Form3_Click(object sender, EventArgs e)
         {
 
@@ -29,7 +34,7 @@ namespace projectoop2
 
         private void buttonlogin_Click(object sender, EventArgs e)
         {
-            Form1 Form1 = new Form1(_username,_role);
+            Form1 Form1 = new Form1(_username);
             Form1.Show();
             this.Hide();
         }

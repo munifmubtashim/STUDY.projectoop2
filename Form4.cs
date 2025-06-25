@@ -18,14 +18,15 @@ namespace projectoop2
     public partial class Signup: Form
     {
         private string _username;
+        
 
 
-        public Signup(string username,string role)
+        public Signup(string username)
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.Form4_Load);
             _username = username;
-            _role = role;
+           
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -65,7 +66,7 @@ namespace projectoop2
 
         private void lbllogin_Click(object sender, EventArgs e)
         {
-            Form1 Form1 = new Form1(_username,_role);
+            Form1 Form1 = new Form1(_username);
             Form1.Show();
             this.Hide();
         }
@@ -110,7 +111,7 @@ namespace projectoop2
         private void lbllogin_Click_1(object sender, EventArgs e)
         {
 
-            Form1 login = new Form1(_username, _role);
+            Form1 login = new Form1(_username);
             login.Show();
             this.Hide();
         }
@@ -143,7 +144,7 @@ namespace projectoop2
             cmd.Parameters.AddWithValue("@DateofBirth", dtb.Value);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Sign up Successfull!");
-            Form1 login = new Form1(_username, _role);
+            Form1 login = new Form1(_username);
             login.Show();
             this.Hide();
 
