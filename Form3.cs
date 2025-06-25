@@ -13,19 +13,16 @@ namespace projectoop2
     public partial class wlc: Form
     {
         private string _username;
-        private string _role;
-        public wlc(string username, string role)
+        
+        public wlc(string username)
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.Form3_Load);
             _username = username;
-            _role = role;
+            
         }
 
-        public wlc(string username)
-        {
-            _username = username;
-        }
+     
 
         private void Form3_Click(object sender, EventArgs e)
         {

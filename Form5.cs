@@ -234,5 +234,10 @@ namespace projectoop2
             dataGridView1.AutoGenerateColumns = true;
             dataGridView1.DataSource = dt;
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
