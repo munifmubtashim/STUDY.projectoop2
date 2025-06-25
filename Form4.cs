@@ -51,7 +51,7 @@ namespace projectoop2
 
         private void Form4_Load(object sender, EventArgs e)
         {
-
+            lblerror.Visible = false;
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -154,14 +154,12 @@ namespace projectoop2
 
         private void txtpass_TextChanged(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txtpass.Text) || string.IsNullOrEmpty(txtconpass.Text))
+            if(string.IsNullOrEmpty(txtpass.Text) && string.IsNullOrEmpty(txtconpass.Text)
+                || txtpass.Text == txtconpass.Text)
             {
                 lblerror.Visible= false;
             }
-            else if (txtpass.Text == txtconpass.Text)
-            {
-                lblerror.Visible = false;
-            }
+           
             else
             {
                 lblerror.Visible = true;

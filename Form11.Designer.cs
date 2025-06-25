@@ -46,10 +46,11 @@
             // 
             this.lblerror.AutoSize = true;
             this.lblerror.BackColor = System.Drawing.Color.Transparent;
-            this.lblerror.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblerror.Font = new System.Drawing.Font("Segoe UI", 4.984615F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblerror.ForeColor = System.Drawing.Color.SteelBlue;
             this.lblerror.Location = new System.Drawing.Point(50, 310);
             this.lblerror.Name = "lblerror";
-            this.lblerror.Size = new System.Drawing.Size(189, 20);
+            this.lblerror.Size = new System.Drawing.Size(115, 12);
             this.lblerror.TabIndex = 52;
             this.lblerror.Text = "Password doesn\'t match!!";
             this.lblerror.Click += new System.EventHandler(this.lblerror_Click);

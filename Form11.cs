@@ -8,6 +8,7 @@ using System.Text;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics.Eventing.Reader;
 
 namespace projectoop2
 {
@@ -85,21 +86,21 @@ namespace projectoop2
 
         private void txtNewPassword_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtNewPassword.Text) || string.IsNullOrEmpty(txtConfirmPassword.Text))
+            if (string.IsNullOrEmpty(txtNewPassword.Text) && string.IsNullOrEmpty(txtConfirmPassword.Text)|| txtNewPassword.Text == txtConfirmPassword.Text)
             {
                 lblerror.Visible = false;
             }
-            else if (txtNewPassword.Text == txtConfirmPassword.Text)
-            {
-                lblerror.Visible = false;
-            }
+            
             else
             {
                 lblerror.Visible = true;
             }
+
         }
+       
         private void chgpass_Load(object sender, EventArgs e)
         {
+            lblerror.Visible = false;
         }
 
         private void lblerror_Click(object sender, EventArgs e)
