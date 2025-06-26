@@ -134,7 +134,7 @@ namespace projectoop2
             decimal totalProfit = totalRevenue - totalCost;
 
             // Show in Label
-            label1.Text = $"Total Profit: {totalProfit:C}";
+            label11.Text = $"{totalProfit:C}";
 
             // Show in Chart
             ShowChart(totalCost, totalRevenue, totalProfit);
