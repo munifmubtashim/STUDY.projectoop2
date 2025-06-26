@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea23 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend23 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea24 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend24 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelsidebar = new System.Windows.Forms.Panel();
             this.btnsettings = new System.Windows.Forms.Button();
             this.btnpurcheses = new System.Windows.Forms.Button();
@@ -88,7 +88,7 @@
             this.btnsettings.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnsettings.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsettings.ForeColor = System.Drawing.Color.White;
-            this.btnsettings.Location = new System.Drawing.Point(0, 288);
+            this.btnsettings.Location = new System.Drawing.Point(0, 296);
             this.btnsettings.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnsettings.Name = "btnsettings";
             this.btnsettings.Size = new System.Drawing.Size(127, 36);
@@ -307,32 +307,33 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Transparent;
-            chartArea23.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea23);
-            legend23.Name = "Legend1";
-            this.chart1.Legends.Add(legend23);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(140, 201);
             this.chart1.Name = "chart1";
-            series23.ChartArea = "ChartArea1";
-            series23.Legend = "Legend1";
-            series23.Name = "Series1";
-            this.chart1.Series.Add(series23);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(770, 250);
             this.chart1.TabIndex = 28;
             this.chart1.Text = "chart1";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // chart2
             // 
-            chartArea24.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea24);
-            legend24.Name = "Legend1";
-            this.chart2.Legends.Add(legend24);
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(800, 350);
             this.chart2.Name = "chart2";
-            series24.ChartArea = "ChartArea1";
-            series24.Legend = "Legend1";
-            series24.Name = "Series1";
-            this.chart2.Series.Add(series24);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(32, 8);
             this.chart2.TabIndex = 29;
             this.chart2.Text = "chart2";
@@ -343,7 +344,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 244);
+            this.button1.Location = new System.Drawing.Point(0, 252);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(127, 36);
