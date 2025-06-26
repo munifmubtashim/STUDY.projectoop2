@@ -113,7 +113,7 @@
             this.lbllogin.AutoSize = true;
             this.lbllogin.BackColor = System.Drawing.Color.Transparent;
             this.lbllogin.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lbllogin.Location = new System.Drawing.Point(241, 515);
+            this.lbllogin.Location = new System.Drawing.Point(249, 507);
             this.lbllogin.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.lbllogin.Name = "lbllogin";
             this.lbllogin.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
@@ -318,7 +318,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 6.092308F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(96, 517);
+            this.label2.Location = new System.Drawing.Point(109, 511);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 13);
             this.label2.TabIndex = 25;

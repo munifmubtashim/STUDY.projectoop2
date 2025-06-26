@@ -97,7 +97,7 @@
             // 
             // newacc
             // 
-            this.newacc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.newacc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.newacc.BackColor = System.Drawing.SystemColors.Highlight;
             this.newacc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.newacc.Font = new System.Drawing.Font("Segoe UI", 6.092308F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -118,7 +118,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.84615F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(59, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(185, 25);
+            this.label3.Size = new System.Drawing.Size(232, 32);
             this.label3.TabIndex = 22;
             this.label3.Text = "Log into Storetrack";
             this.label3.UseMnemonic = false;
@@ -147,7 +147,7 @@
             this.textusername.ForeColor = System.Drawing.Color.DarkGray;
             this.textusername.Location = new System.Drawing.Point(102, 200);
             this.textusername.Name = "textusername";
-            this.textusername.Size = new System.Drawing.Size(206, 21);
+            this.textusername.Size = new System.Drawing.Size(206, 25);
             this.textusername.TabIndex = 18;
             this.textusername.Text = " Username";
             this.textusername.Click += new System.EventHandler(this.textusername_Click);
@@ -181,7 +181,7 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 6.092308F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
@@ -202,7 +202,7 @@
             this.textpassword.ForeColor = System.Drawing.Color.DarkGray;
             this.textpassword.Location = new System.Drawing.Point(101, 244);
             this.textpassword.Name = "textpassword";
-            this.textpassword.Size = new System.Drawing.Size(206, 21);
+            this.textpassword.Size = new System.Drawing.Size(206, 25);
             this.textpassword.TabIndex = 19;
             this.textpassword.Text = " Password";
             this.textpassword.Click += new System.EventHandler(this.textpassword_Click);
