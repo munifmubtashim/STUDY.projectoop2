@@ -42,7 +42,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::projectoop2.Properties.Resources.icons8_inventory_50;
-            this.pictureBox1.Location = new System.Drawing.Point(330, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(327, 47);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(149, 130);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -54,7 +54,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 26.03077F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(170, 145);
+            this.label1.Location = new System.Drawing.Point(167, 180);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(497, 60);
             this.label1.TabIndex = 2;
@@ -66,7 +66,7 @@
             this.btnsignin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsignin.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsignin.ForeColor = System.Drawing.Color.White;
-            this.btnsignin.Location = new System.Drawing.Point(348, 296);
+            this.btnsignin.Location = new System.Drawing.Point(345, 331);
             this.btnsignin.Name = "btnsignin";
             this.btnsignin.Size = new System.Drawing.Size(107, 51);
             this.btnsignin.TabIndex = 22;
@@ -79,18 +79,19 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(344, 427);
+            this.label2.Location = new System.Drawing.Point(0, 427);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 23);
             this.label2.TabIndex = 23;
             this.label2.Text = "StoreTrack v1.0";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(309, 205);
+            this.label3.Location = new System.Drawing.Point(306, 240);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(219, 23);
             this.label3.TabIndex = 24;
@@ -107,7 +108,7 @@
             this.Controls.Add(this.btnsignin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "wlc";
