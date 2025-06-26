@@ -212,5 +212,12 @@ namespace projectoop2
         {
 
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Form12 profit = new Form12(_username);
+            profit.Show();
+            this.Hide();
+        }
     }   
 }

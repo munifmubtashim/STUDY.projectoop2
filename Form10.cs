@@ -199,7 +199,13 @@ namespace projectoop2
             changeForm.ShowDialog();
             
         }
-    
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form12 profit = new Form12(_username);
+            profit.Show();
+            this.Hide();
+        }
     }
     
     
