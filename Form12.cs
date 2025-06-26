@@ -106,7 +106,7 @@ namespace projectoop2
         }
         private void ShowTotalProfit()
         {
-            string connectionString = "@Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True";
 
             decimal totalCost = 0;
             decimal totalRevenue = 0;
@@ -134,7 +134,7 @@ namespace projectoop2
             decimal totalProfit = totalRevenue - totalCost;
 
             // Show in Label
-            label1.Text = $"Total Profit: {totalProfit:C}";
+            label11.Text = $"{totalProfit:C}";
 
             // Show in Chart
             ShowChart(totalCost, totalRevenue, totalProfit);
