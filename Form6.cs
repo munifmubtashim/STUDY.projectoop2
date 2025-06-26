@@ -163,17 +163,25 @@ namespace projectoop2
         private void button2_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
-            conn.Open();
-            string query = "UPDATE Sales SET PName='" + textBox2.Text + "',Quantity='" + textBox3.Text + "',Amount='" + textBox4.Text + "' where ID=" + textBox1.Text;
+            try
+            {
+                conn.Open();
+                string query = "UPDATE Sales SET PName='" + textBox2.Text + "',Quantity='" + textBox3.Text + "',Amount='" + textBox4.Text + "' where ID=" + textBox1.Text;
 
 
 
-            SqlCommand cmd = new SqlCommand(query, conn);
+                SqlCommand cmd = new SqlCommand(query, conn);
 
 
 
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Updated Successfully!");
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Updated Successfully!");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Write the currect ID " + ex.Message);
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

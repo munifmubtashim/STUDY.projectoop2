@@ -147,19 +147,26 @@ namespace projectoop2
 
         private void button2_Click(object sender, EventArgs e)
         {
-         
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
-            conn.Open();
-            string query = "UPDATE Customer SET Name='" + textBox2.Text + "',Contact='" + textBox3.Text + "',Address='" + textBox4.Text + "' where No=" + textBox1.Text;
+            try
+            {
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+                conn.Open();
+                string query = "UPDATE Customer SET Name='" + textBox2.Text + "',Contact='" + textBox3.Text + "',Address='" + textBox4.Text + "' where No=" + textBox1.Text;
 
 
 
-            SqlCommand cmd = new SqlCommand(query, conn);
+                SqlCommand cmd = new SqlCommand(query, conn);
 
 
 
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Updated Successfully!");
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Updated Successfully!");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Write the currect No " + ex.Message);
+            }
         }
 
         private void pbrefresh_Click(object sender, EventArgs e)

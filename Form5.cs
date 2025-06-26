@@ -143,20 +143,31 @@ namespace projectoop2
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
             string query = "INSERT INTO Product ([ID], [Name], [Catagory], [Quantity], [Price]) VALUES (@ID, @Name, @Catagory, @Quantity, @Price)";
 
-            conn.Open();
-            SqlCommand cmd = new SqlCommand(query, conn);
-            cmd.Parameters.AddWithValue("@ID", textBox1.Text);
-            cmd.Parameters.AddWithValue("@Name", textBox2.Text);
-            cmd.Parameters.AddWithValue("@Catagory", textBox3.Text);
-            cmd.Parameters.AddWithValue("@Quantity", textBox4.Text);
-            cmd.Parameters.AddWithValue("@Price", textBox5.Text);
+            try
+            {
 
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Product added Successfully!");
-            
-           
-            
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@ID", textBox1.Text);
+                cmd.Parameters.AddWithValue("@Name", textBox2.Text);
+                cmd.Parameters.AddWithValue("@Catagory", textBox3.Text);
+                cmd.Parameters.AddWithValue("@Quantity", textBox4.Text);
+                cmd.Parameters.AddWithValue("@Price", textBox5.Text);
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Product added Successfully!");
+
+
+
+            }
+
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show("Write the currect ID " + ex.Message);
+            }
         }
+        
 
         private void pbrefresh_Click(object sender, EventArgs e)
         {
@@ -184,18 +195,26 @@ namespace projectoop2
         {
 
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
-            conn.Open();
-            string query = "UPDATE Product SET Name='" + textBox2.Text + "',Catagory='" + textBox3.Text + "',Quantity=" + textBox4.Text + ",Price='" + textBox5.Text + "' where ID=" + textBox1.Text;
+            try
+            {
+                conn.Open();
+                string query = "UPDATE Product SET Name='" + textBox2.Text + "',Catagory='" + textBox3.Text + "',Quantity=" + textBox4.Text + ",Price='" + textBox5.Text + "' where ID=" + textBox1.Text;
 
 
 
-            SqlCommand cmd = new SqlCommand(query, conn);
-        
+                SqlCommand cmd = new SqlCommand(query, conn);
 
 
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Updated Successfully!");
 
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Updated Successfully!");
+
+            }
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show("Write the currect ID " + ex.Message);
+            }
         }
         private void clear()
         {
@@ -208,14 +227,22 @@ namespace projectoop2
 
         private void button3_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
-            conn.Open();
-            string q = "DELETE FROM FACU WHERE ID=" + textBox1.Text;
-            SqlCommand cmd = new SqlCommand(q, conn);
-            cmd.ExecuteNonQuery();
-            clear();
-            MessageBox.Show("DELETED Successfully!");
+            try
+            {
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+                conn.Open();
+                string q = "DELETE FROM FACU WHERE ID=" + textBox1.Text;
+                SqlCommand cmd = new SqlCommand(q, conn);
+                cmd.ExecuteNonQuery();
+                clear();
+                MessageBox.Show("DELETED Successfully!");
 
+            }
+            catch (Exception ex)
+            {
+               
+                MessageBox.Show("Write the currect ID " + ex.Message);
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
