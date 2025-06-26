@@ -189,6 +189,13 @@ namespace projectoop2
             dataGridView1.AutoGenerateColumns = true;
             dataGridView1.DataSource = dt;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form12 profit = new Form12(_username);
+            profit.Show();
+            this.Hide();
+        }
     }
 
 }

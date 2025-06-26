@@ -412,6 +412,13 @@ namespace projectoop2
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form12 profit = new Form12(_username);
+            profit.Show();
+            this.Hide();
+        }
     }
 
 

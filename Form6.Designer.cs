@@ -56,6 +56,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbrefresh)).BeginInit();
             this.panelsidebar.SuspendLayout();
@@ -195,6 +196,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panelsidebar.BackgroundImage = global::projectoop2.Properties.Resources.Royal;
+            this.panelsidebar.Controls.Add(this.button3);
             this.panelsidebar.Controls.Add(this.btnsettings);
             this.panelsidebar.Controls.Add(this.btnpurcheses);
             this.panelsidebar.Controls.Add(this.btnsuppliers);
@@ -214,7 +216,7 @@
             this.btnsettings.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnsettings.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsettings.ForeColor = System.Drawing.Color.White;
-            this.btnsettings.Location = new System.Drawing.Point(3, 249);
+            this.btnsettings.Location = new System.Drawing.Point(0, 287);
             this.btnsettings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsettings.Name = "btnsettings";
             this.btnsettings.Size = new System.Drawing.Size(127, 34);
@@ -355,7 +357,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(680, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 17);
+            this.label1.Size = new System.Drawing.Size(127, 15);
             this.label1.TabIndex = 28;
             this.label1.Text = "lblUser(role)datetime";
             // 
@@ -402,6 +404,21 @@
             this.textBox6.Size = new System.Drawing.Size(192, 22);
             this.textBox6.TabIndex = 60;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(-3, 245);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(127, 36);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "Profit Margin";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // Form6
             // 
@@ -469,5 +486,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button button3;
     }
 }
