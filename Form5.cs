@@ -229,7 +229,6 @@ namespace projectoop2
         {
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
                 conn.Open();
                 string q = "DELETE FROM FACU WHERE ID=" + textBox1.Text;
                 SqlCommand cmd = new SqlCommand(q, conn);
