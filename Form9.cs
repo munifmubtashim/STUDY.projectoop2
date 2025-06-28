@@ -137,6 +137,7 @@ namespace projectoop2
         {
             DateTime date = DateTime.Now;
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+            try { 
             string query = "INSERT INTO Purchese ([ID], [Supplier],[Date], [Product],[Price]) VALUES (@ID, @Supplier, @Date, @Product,@Price)";
 
             conn.Open();
@@ -151,6 +152,15 @@ namespace projectoop2
 
             cmd.ExecuteNonQuery();
             MessageBox.Show("Purchese details added Successfully!");
+        }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Invalid input. Please check your data and try again.\n\n" + ex.Message,
+              "Error",
+              MessageBoxButtons.OK,
+              MessageBoxIcon.Information);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -173,7 +183,10 @@ namespace projectoop2
             catch (Exception ex)
             {
 
-                MessageBox.Show("Write the currect ID " + ex.Message);
+                MessageBox.Show("Invalid input. Please check your data and try again.\n\n" + ex.Message,
+                "Error",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
             }
         }
 

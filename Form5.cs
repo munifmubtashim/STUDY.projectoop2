@@ -163,8 +163,12 @@ namespace projectoop2
 
             catch (Exception ex)
             {
-                
-                MessageBox.Show("Write the currect ID " + ex.Message);
+
+                MessageBox.Show("Invalid input. Please check your data and try again.\n\n" + ex.Message,
+                "Error",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+
             }
         }
         
@@ -212,8 +216,11 @@ namespace projectoop2
             }
             catch (Exception ex)
             {
-                
-                MessageBox.Show("Write the currect ID " + ex.Message);
+
+                MessageBox.Show("Invalid input. Please check your data and try again.\n\n" + ex.Message,
+              "Error",
+              MessageBoxButtons.OK,
+              MessageBoxIcon.Information);
             }
         }
         private void clear()
@@ -227,6 +234,8 @@ namespace projectoop2
 
         private void button3_Click(object sender, EventArgs e)
         {
+           
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
             try
             {
                 conn.Open();
@@ -239,8 +248,11 @@ namespace projectoop2
             }
             catch (Exception ex)
             {
-               
-                MessageBox.Show("Write the currect ID " + ex.Message);
+
+                MessageBox.Show("Invalid input. Please check your data and try again.\n\n" + ex.Message,
+                "Error",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
             }
         }
 

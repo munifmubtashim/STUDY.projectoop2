@@ -128,28 +128,40 @@ namespace projectoop2
 
         private void button1_Click(object sender, EventArgs e)
         {
-        
-            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
-            string query = "INSERT INTO Customer ([No], [Name],[Contact], [Address]) VALUES (@No, @Name, @Contact, @Address)";
+          
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
+            try
+            {
+                string query = "INSERT INTO Customer ([No], [Name],[Contact], [Address]) VALUES (@No, @Name, @Contact, @Address)";
 
-            conn.Open();
-            SqlCommand cmd = new SqlCommand(query, conn);
-            cmd.Parameters.AddWithValue("@No", textBox1.Text);
-            cmd.Parameters.AddWithValue("@Name", textBox2.Text);
-            cmd.Parameters.AddWithValue("@Contact", textBox3.Text);
-            cmd.Parameters.AddWithValue("@Address", textBox4.Text);
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@No", textBox1.Text);
+                cmd.Parameters.AddWithValue("@Name", textBox2.Text);
+                cmd.Parameters.AddWithValue("@Contact", textBox3.Text);
+                cmd.Parameters.AddWithValue("@Address", textBox4.Text);
 
 
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Customers details added Successfully!");
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Customers details added Successfully!");
 
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Invalid input. Please check your data and try again.\n\n" + ex.Message,
+              "Error",
+              MessageBoxButtons.OK,
+              MessageBoxIcon.Information);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+           
+                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
                 conn.Open();
                 string query = "UPDATE Customer SET Name='" + textBox2.Text + "',Contact='" + textBox3.Text + "',Address='" + textBox4.Text + "' where No=" + textBox1.Text;
 
@@ -165,7 +177,10 @@ namespace projectoop2
             catch (Exception ex)
             {
 
-                MessageBox.Show("Write the currect No " + ex.Message);
+                MessageBox.Show("Invalid input. Please check your data and try again.\n\n" + ex.Message,
+              "Error",
+              MessageBoxButtons.OK,
+              MessageBoxIcon.Information);
             }
         }
 

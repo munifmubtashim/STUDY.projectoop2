@@ -11,22 +11,22 @@ using System.Windows.Forms;
 
 namespace projectoop2
 {
-    public partial class Form8: Form
+    public partial class Form8 : Form
     {
         public string _username;
-        
+
         public Form8(string username)
         {
             InitializeComponent();
             this.Load += new System.EventHandler(this.Form8_Load);
             _username = username;
-            
+
         }
         private void Form8_Load(object sender, EventArgs e)
         {
             string currentDateTime = DateTime.Now.ToString("dd/MM/yyyy");
             label1.Text = $"{_username} | {currentDateTime}";
-            
+
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
             string query = "SELECT * FROM Supplier";
             SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
@@ -38,7 +38,7 @@ namespace projectoop2
 
 
         }
-       
+
 
         private void Dashboardbutton_Click_1(object sender, EventArgs e)
         {
@@ -71,7 +71,7 @@ namespace projectoop2
 
         private void btnsuppliers_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void btnpurcheses_Click(object sender, EventArgs e)
@@ -153,14 +153,21 @@ namespace projectoop2
             catch (Exception ex)
             {
 
-                MessageBox.Show("Write the currect ID " + ex.Message);
+
+                MessageBox.Show("Invalid input. Please check your data and try again.\n\n" + ex.Message,
+              "Error",
+              MessageBoxButtons.OK,
+              MessageBoxIcon.Information);
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-1V76GGV;Initial Catalog=HUMSDb;Integrated Security=True");
-            string query = "INSERT INTO Supplier ([ID], [Name],[Contact_Name], [Number]) VALUES (@ID, @Name, @Contact_Name, @Number)";
+            try
+            {
+                string query = "INSERT INTO Supplier ([ID], [Name],[Contact_Name], [Number]) VALUES (@ID, @Name, @Contact_Name, @Number)";
 
             conn.Open();
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -173,6 +180,15 @@ namespace projectoop2
             cmd.ExecuteNonQuery();
             MessageBox.Show("Supplier details added Successfully!");
         }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Invalid input. Please check your data and try again.\n\n" + ex.Message,
+              "Error",
+              MessageBoxButtons.OK,
+              MessageBoxIcon.Information);
+            }
+}
 
         private void button4_Click(object sender, EventArgs e)
         {
