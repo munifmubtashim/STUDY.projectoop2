@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
             this.panelsidebar = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.btnsettings = new System.Windows.Forms.Button();
             this.btnpurcheses = new System.Windows.Forms.Button();
             this.btnsuppliers = new System.Windows.Forms.Button();
@@ -56,7 +57,6 @@
             this.pbrefresh = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.panelsidebar.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -82,6 +82,21 @@
             this.panelsidebar.Name = "panelsidebar";
             this.panelsidebar.Size = new System.Drawing.Size(126, 428);
             this.panelsidebar.TabIndex = 23;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(3, 245);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(127, 36);
+            this.button3.TabIndex = 61;
+            this.button3.Text = "Profit Margin";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnsettings
             // 
@@ -230,7 +245,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(676, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 15);
+            this.label1.Size = new System.Drawing.Size(140, 17);
             this.label1.TabIndex = 28;
             this.label1.Text = "lblUser(role)datetime";
             // 
@@ -250,7 +265,7 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(12, 7);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(211, 20);
+            this.label4.Size = new System.Drawing.Size(228, 21);
             this.label4.TabIndex = 26;
             this.label4.Text = "StoreTrack Inventory System";
             // 
@@ -353,6 +368,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(161, 22);
             this.textBox1.TabIndex = 38;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -399,21 +415,6 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(192, 22);
             this.textBox6.TabIndex = 59;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9.969231F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(3, 245);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(127, 36);
-            this.button3.TabIndex = 61;
-            this.button3.Text = "Profit Margin";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form7
             // 

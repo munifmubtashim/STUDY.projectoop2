@@ -281,6 +281,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(700, 89);
             this.panel6.TabIndex = 27;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // label11
             // 
@@ -318,6 +319,7 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "                        Total Profit";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // chart1
             // 

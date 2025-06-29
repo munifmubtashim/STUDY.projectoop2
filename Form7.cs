@@ -218,6 +218,11 @@ namespace projectoop2
             profit.Show();
             this.Hide();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

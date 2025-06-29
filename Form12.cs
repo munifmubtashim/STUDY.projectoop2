@@ -159,5 +159,15 @@ namespace projectoop2
 
             chart1.Series.Add(series);
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

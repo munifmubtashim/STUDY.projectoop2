@@ -149,7 +149,7 @@ namespace projectoop2
             this.Hide();
 
 
-
+            
         }
 
         private void txtpass_TextChanged(object sender, EventArgs e)
