@@ -17,6 +17,8 @@ namespace projectoop2
         public Form12(string username)
         {
             InitializeComponent();
+            this.Load += new System.EventHandler(this.Form12_Load);
+            _username = username;
         }
 
         private void Dashboardbutton_Click(object sender, EventArgs e)
