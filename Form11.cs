@@ -86,7 +86,7 @@ namespace projectoop2
 
         private void txtNewPassword_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtNewPassword.Text) && string.IsNullOrEmpty(txtConfirmPassword.Text)|| txtNewPassword.Text == txtConfirmPassword.Text)
+            if (string.IsNullOrEmpty(txtNewPassword.Text) || string.IsNullOrEmpty(txtConfirmPassword.Text)|| txtNewPassword.Text == txtConfirmPassword.Text)
             {
                 lblerror.Visible = false;
             }
