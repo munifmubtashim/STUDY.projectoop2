@@ -206,6 +206,11 @@ namespace projectoop2
             profit.Show();
             this.Hide();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
     
     
